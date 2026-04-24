@@ -1,0 +1,457 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "created": "2026-04-13",
+    "last_updated": "2026-04-13",
+    "maintainer": "小清",
+    "purpose": "无创血糖监测方案评估版本追踪"
+  },
+  "evaluation_criteria": {
+    "primary_standards": {
+      "mard": {
+        "description": "平均绝对相对差",
+        "threshold": "< 15%",
+        "excellent": "< 10%",
+        "source": "NMPA指导原则"
+      },
+      "iso_15167_zoneab": {
+        "description": "ISO 15197误差网格标准",
+        "threshold": "≥ 95%",
+        "excellent": "≥ 99%",
+        "source": "国际共识标准"
+      },
+      "clinical_validation": {
+        "description": "人体临床试验数据",
+        "threshold": "必须有",
+        "source": "监管要求"
+      },
+      "non_invasive": {
+        "description": "无创检测（无针刺采血）",
+        "threshold": "必须满足",
+        "source": "用户体验要求"
+      }
+    },
+    "secondary_factors": {
+      "technical_maturity": {
+        "description": "技术成熟度",
+        "ranking": ["临床阶段", "原型阶段", "概念阶段"],
+        "weight": "高"
+      },
+      "scalability": {
+        "description": "多生物标志物扩展能力",
+        "weight": "中"
+      },
+      "business_model": {
+        "description": "商业模式清晰度",
+        "weight": "中"
+      },
+      "intellectual_property": {
+        "description": "知识产权布局",
+        "weight": "中"
+      },
+      "manufacturability": {
+        "description": "量产能力和成本控制",
+        "weight": "高"
+      }
+    }
+  },
+  "vendors": {
+    "ruixin_micro": {
+      "id": "ruixin_micro",
+      "name": "睿芯微",
+      "name_en": "Guangzhou Ruixin Micro Electronics",
+      "status": "active",
+      "first_evaluated": "2026-04-13",
+      "last_updated": "2026-04-13",
+      "documents": [
+        "vendor/睿芯微/广州睿芯微-无创血糖检测项目介绍_Jan 2026.md"
+      ],
+      "technology": {
+        "route": "高光谱成像 + AI",
+        "principle": "高光谱CMOS图像传感器 + 血管实时成像",
+        "sensor_type": "高光谱CIS",
+        "spectrum_range": "可见光 + 近红外",
+        "detection_method": "血管成像（类似智能相机）",
+        "ai_architecture": "MoE Transformer"
+      },
+      "performance": {
+        "mard": {
+          "value": 8.39,
+          "unit": "%",
+          "rating": "excellent",
+          "source": "北京大学第一医院"
+        },
+        "iso_15167": {
+          "zone_a": 96.66,
+          "zone_ab": 100.0,
+          "rating": "excellent",
+          "source": "北京大学第一医院"
+        },
+        "clarke_error_grid": {
+          "zone_a": 95.55,
+          "zone_ab": 99.51,
+          "rating": "excellent"
+        }
+      },
+      "clinical_validation": {
+        "status": "completed",
+        "institution": "北京大学第一医院（内分泌科）",
+        "sample_size": 30,
+        "data_points": 809,
+        "phase": "临床阶段"
+      },
+      "product_maturity": {
+        "stage": "临床阶段",
+        "device_form": "可穿戴设备、手持式设备",
+        "target_certification": "2028-2029E",
+        "timeline": {
+          "invention": "2023",
+          "clinical_validation": "已完成",
+          "certification_expected": "2028-2029E"
+        }
+      },
+      "scalability": {
+        "current": "血糖监测（临床阶段）",
+        "in_development": [
+          "血脂",
+          "血清肌酐",
+          "尿酸",
+          "健康管理"
+        ],
+        "exploration": [
+          "Tau蛋白（阿尔茨海默病）",
+          "炎症相关指标"
+        ]
+      },
+      "business_model": {
+        "models": [
+          "B2B/B2B2C产品销售",
+          "联合开发解决方案",
+          "技术授权+芯片/模组销售"
+        ],
+        "target_customers": "T2D患者 + 健康管理人群",
+        "ip_portfolio": {
+          "patents": 27,
+          "coverage": "全球布局",
+          "protected_areas": [
+            "硬件系统",
+            "算法模型",
+            "系统级应用",
+            "数据管理与处理"
+          ]
+        }
+      },
+      "strengths": [
+        "临床验证完整",
+        "性能指标优秀（MARD 8.39%）",
+        "ISO 15167完美达标",
+        "扩展能力强（多生物标志物）",
+        "知识产权完善（27项专利）",
+        "商业模式清晰",
+        "无创无耗材"
+      ],
+      "weaknesses": [
+        "认证周期长（2028-2029E）",
+        "硬件成本可能较高",
+        "面临国际竞品竞争",
+        "光学系统复杂度高"
+      ],
+      "overall_rating": {
+        "score": 5,
+        "max_score": 5,
+        "recommendation": "首选方案",
+        "confidence": "高"
+      },
+      "evaluation_history": [
+        {
+          "date": "2026-04-13",
+          "action": "初始评估",
+          "conclusion": "推荐作为首选方案",
+          "reasoning": "临床验证完整、性能优秀、扩展能力强"
+        }
+      ]
+    },
+    "mixosense": {
+      "id": "mixosense",
+      "name": "多感科技",
+      "name_en": "MixoSense",
+      "status": "observation",
+      "first_evaluated": "2026-04-13",
+      "last_updated": "2026-04-13",
+      "documents": [
+        "vendor/多感科技/多感科技近红外多光谱介绍202601.md"
+      ],
+      "technology": {
+        "route": "近红外光谱传感",
+        "principle": "检测葡萄糖分子O-H/C-H基团光谱吸收",
+        "sensor_type": "硅基分光芯片 + InGaAs PD线阵传感器",
+        "spectrum_range": "780-2500 nm（重点900-1750nm）",
+        "channels": 112,
+        "detection_method": "光谱吸收分析",
+        "ai_architecture": "未明确"
+      },
+      "performance": {
+        "mard": {
+          "value": null,
+          "status": "未提供",
+          "rating": "unknown"
+        },
+        "iso_15167": {
+          "status": "未验证",
+          "rating": "unknown"
+        }
+      },
+      "clinical_validation": {
+        "status": "animal_study_only",
+        "institution": "大学（未明确）",
+        "sample_size": null,
+        "data_points": null,
+        "phase": "原型开发阶段"
+      },
+      "hardware_specs": {
+        "chip_type": "硅基分光芯片（DBR结构）",
+        "sensor": "InGaAs PD线阵传感器",
+        "channels": 112,
+        "pixel_size": "12.5 μm",
+        "active_area": "0.5 × 1.4 mm",
+        "process": "8吋硅光工艺平台",
+        "thickness_control": "< 2%",
+        "wavelength_range": "900-1750nm（高血糖信息量）"
+      },
+      "product_maturity": {
+        "stage": "原型开发阶段",
+        "milestones": {
+          "demo_expected": "2026年Q1",
+          "devboard_expected": "2026年Q1底"
+        },
+        "clinical_trial_status": "未规划"
+      },
+      "scalability": {
+        "current": "血糖监测（原型阶段）",
+        "potential": "可拓展至其他光谱范围"
+      },
+      "business_model": {
+        "status": "未明确",
+        "ip_portfolio": {
+          "status": "未披露"
+        }
+      },
+      "strengths": [
+        "硅光工艺成熟（8吋平台）",
+        "易于量产和工艺转移",
+        "硬件设计精巧（DBR渐变结构）",
+        "成本控制潜力大",
+        "传感器参数明确",
+        "波长选择科学（动物实验验证）"
+      ],
+      "weaknesses": [
+        "无临床验证数据",
+        "算法未明确",
+        "阶段过于早期（原型开发）",
+        "单一应用（仅血糖）",
+        "无商业模式信息",
+        "无知识产权信息",
+        "人体试验未规划"
+      ],
+      "overall_rating": {
+        "score": 2,
+        "max_score": 5,
+        "recommendation": "谨慎观察",
+        "confidence": "低"
+      },
+      "evaluation_history": [
+        {
+          "date": "2026-04-13",
+          "action": "初始评估",
+          "conclusion": "建议谨慎观察",
+          "reasoning": "硬件工艺有潜力，但验证严重不足，阶段太早",
+          "next_review": "2026年Q1（Demo完成后）"
+        }
+      ]
+    },
+    "tiilab": {
+      "id": "tiilab",
+      "name": "Tiilab",
+      "status": "insufficient_data",
+      "first_evaluated": "2026-04-13",
+      "last_updated": "2026-04-13",
+      "documents": [
+        "vendor/tiilab/Non-invasive Wearable Blood (1).md"
+      ],
+      "technology": {
+        "route": "未明确",
+        "principle": "光学感知（推测）",
+        "detection_method": "未明确"
+      },
+      "performance": {
+        "mard": {
+          "target": "~15%",
+          "status": "目标值",
+          "rating": "unknown"
+        }
+      },
+      "clinical_validation": {
+        "status": "无数据"
+      },
+      "product_maturity": {
+        "stage": "未明确"
+      },
+      "business_model": {
+        "status": "未明确"
+      },
+      "strengths": [
+        "无创检测",
+        "长期监测理念"
+      ],
+      "weaknesses": [
+        "技术细节不明确",
+        "无临床验证数据",
+        "性能指标仅为目标值",
+        "产品阶段未明确",
+        "信息严重不足"
+      ],
+      "overall_rating": {
+        "score": 1,
+        "max_score": 5,
+        "recommendation": "不推荐",
+        "confidence": "极低",
+        "reason": "信息严重不足，无法评估"
+      },
+      "evaluation_history": [
+        {
+          "date": "2026-04-13",
+          "action": "初始评估",
+          "conclusion": "不推荐 - 信息不足",
+          "reasoning": "现有材料无法进行有效评估",
+          "next_step": "需要更详细的技术文档"
+        }
+      ]
+    }
+  },
+  "comparative_analysis": {
+    "technology_comparison": {
+      "detection_principle": {
+        "ruixin_micro": "血管成像（直接检测）",
+        "mixosense": "光谱吸收（间接检测）",
+        "tiilab": "未明确"
+      },
+      "data_dimensionality": {
+        "ruixin_micro": "图像+光谱（高维，千-万级变量）",
+        "mixosense": "光谱（中维，112通道）",
+        "tiilab": "未明确"
+      },
+      "ai_dependency": {
+        "ruixin_micro": "强依赖（MoE Transformer）",
+        "mixosense": "待验证",
+        "tiilab": "未明确"
+      }
+    },
+    "maturity_comparison": {
+      "clinical_stage": {
+        "ruixin_micro": "✅ 临床阶段",
+        "mixosense": "❌ 原型阶段",
+        "tiilab": "❓ 未明确"
+      },
+      "clinical_data": {
+        "ruixin_micro": "✅ N=30, 809数据点",
+        "mixosense": "❌ 仅动物实验",
+        "tiilab": "❌ 无数据"
+      },
+      "mard_available": {
+        "ruixin_micro": "✅ 8.39%",
+        "mixosense": "❌ 未提供",
+        "tiilab": "⚠️ 目标15%"
+      }
+    },
+    "commercialization_comparison": {
+      "ip_protection": {
+        "ruixin_micro": "✅ 27项专利",
+        "mixosense": "❌ 未披露",
+        "tiilab": "❌ 未披露"
+      },
+      "business_model": {
+        "ruixin_micro": "✅ 3种清晰模式",
+        "mixosense": "❌ 未明确",
+        "tiilab": "❌ 未明确"
+      },
+      "manufacturability": {
+        "ruixin_micro": "⏳ 未明确",
+        "mixosense": "✅ 8吋硅光工艺",
+        "tiilab": "❌ 未明确"
+      }
+    }
+  },
+  "recommendations": {
+    "primary_choice": {
+      "vendor": "ruixin_micro",
+      "rationale": [
+        "临床验证完整（北京大学第一医院）",
+        "性能指标优秀（MARD 8.39%）",
+        "ISO 15167标准完美达标（Zone A+B 100%）",
+        "扩展能力强（多生物标志物）",
+        "知识产权完善（27项专利）",
+        "商业模式清晰（3种模式）"
+      ],
+      "best_for": [
+        "需要2028年后有认证产品",
+        "可接受较高硬件成本",
+        "看重AI算法和多应用扩展",
+        "目标市场包括健康管理"
+      ],
+      "risks": [
+        "认证周期较长（2028-2029E）",
+        "面临国际竞品竞争"
+      ]
+    },
+    "secondary_observation": {
+      "vendor": "mixosense",
+      "rationale": [
+        "硅光工艺成熟",
+        "成本控制潜力大",
+        "硬件参数明确"
+      ],
+      "watch_points": [
+        "2026年Q1 Demo完成情况",
+        "临床验证进展",
+        "算法开发状态"
+      ],
+      "use_case": "可作为技术储备或备选方案"
+    },
+    "not_recommended": {
+      "vendor": "tiilab",
+      "reason": "信息严重不足，无法评估"
+    }
+  },
+  "action_items": {
+    "immediate": [
+      "完成睿芯微和多感科技的深度对比",
+      "创建版本控制的评估追踪文件",
+      "与睿芯微安排技术交流"
+    ],
+    "short_term": [
+      "收集更多vendor材料",
+      "跟踪多感科技2026年Q1 Demo进展",
+      "评估其他技术路线（拉曼光谱、超声等）"
+    ],
+    "medium_term": [
+      "跟踪睿芯微临床试验进展",
+      "评估国际竞品新技术",
+      "更新评价标准（如需要）"
+    ]
+  },
+  "version_history": [
+    {
+      "version": "1.0",
+      "date": "2026-04-13",
+      "changes": [
+        "初始版本创建",
+        "添加睿芯微评估（首选方案）",
+        "添加多感科技评估（谨慎观察）",
+        "添加Tiilab评估（信息不足）",
+        "创建对比分析框架",
+        "定义评价标准",
+        "制定行动建议"
+      ]
+    }
+  ]
+}

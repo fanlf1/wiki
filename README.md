@@ -1,6 +1,6 @@
 # LLM Wiki - 个人知识库
 
-> 由Claude Sonnet 4.6维护，初心策展的持久化知识库
+> 由小清维护，初心策展的持久化知识库
 
 ## 📖 什么是LLM Wiki？
 
@@ -76,7 +76,7 @@ LLM会检查：
 
 ## 🛠️ 技术栈
 
-- **LLM**：Claude Sonnet 4.6 (via Claude Code)
+- **LLM**：小清 (via Claude Code)
 - **编辑器**：Obsidian（可选，用于可视化）
 - **版本控制**：Git
 - **格式**：Markdown + YAML frontmatter
@@ -103,6 +103,6 @@ LLM会检查：
 
 ---
 
-**维护者**：Claude Sonnet 4.6
+**维护者**：小清
 **策展人**：初心
 **最后更新**：2026-04-24
