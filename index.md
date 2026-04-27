@@ -9,12 +9,13 @@
 - 概念：10
 - 实体：9
 - 主题：1
-- 源文件：17
+- 源文件：18
 - 查询：0
 
 ---
 
 ## 源文件 (Sources)
+ - [[血糖与PPG方案分析汇总-摩托罗拉]] — 摩托罗拉技术评估（睿芯微/Tiilab/多感科技对比，PPG系统设计，算法供应商评估）
 
 - [[LLM-WIKI-摘要]] — Andrej Karpathy的LLM Wiki理念文档
 - [[LLM-WIKI-实操-摘要]] — Obsidian+Claude Code搭建LLM Wiki的实操指南
