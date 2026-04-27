@@ -1,0 +1,215 @@
+{
+  "main": {
+    "id": "1144dc6650e5de16",
+    "type": "split",
+    "children": [
+      {
+        "id": "1de942cf7a60ebda",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e61b17a4df2a81af",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/entities/Spectricity.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Spectricity"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e97f7207bd0fcbef",
+    "type": "split",
+    "children": [
+      {
+        "id": "aae4bf003acac923",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1740a31b55d1843d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "f5841feda3762350",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "3416d475ea1dc775",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "书签"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 541.5
+  },
+  "right": {
+    "id": "f1c41f0e6bda4231",
+    "type": "split",
+    "children": [
+      {
+        "id": "a9c21fcb6783cd75",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "32ab849890184bb0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "wiki/entities/Spectricity.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Spectricity 的反向链接列表"
+            }
+          },
+          {
+            "id": "88072f613bedc396",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "wiki/entities/Spectricity.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Spectricity 的出链列表"
+            }
+          },
+          {
+            "id": "296d93ca1997bd20",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "168b8a06f8d3d07a",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "添加笔记属性"
+            }
+          },
+          {
+            "id": "4972a18d4449834b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "wiki/entities/Spectricity.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Spectricity 的大纲"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:新建数据库": false
+    }
+  },
+  "active": "e61b17a4df2a81af",
+  "lastOpenFiles": [
+    "wiki/entities/Andrej Karpathy.md",
+    "wiki/sources/智能戒指硬件架构-摘要.md",
+    "wiki/sources/无创血糖监测难点与技术对策-摘要.md",
+    "wiki/sources/睿芯微信息收集-20260424-摘要.md",
+    "wiki/sources/全球CGM市场2025-摘要.md",
+    "wiki/concepts/混合模拟IC.md",
+    "wiki/concepts/多光谱成像.md",
+    "wiki/entities/睿芯微.md",
+    "wiki/overview.md",
+    "未命名 1.canvas",
+    "2026-04-24.md",
+    "未命名.base",
+    "未命名.canvas",
+    "wiki/sources/Tiilab无创血糖监测-摘要.md",
+    "wiki/sources/Spectricity-什么是多光谱成像-摘要.md",
+    "wiki/entities/成都睿谱微.md",
+    "index.md",
+    "LLM-WIKI-实操.md",
+    "raw/notes/Creteria/MARD.md",
+    "wiki/concepts/无创血糖监测.md",
+    "README.md",
+    "OBSIDIAN使用指南.md",
+    "log.md",
+    "LLM-WIKI.md",
+    "CLAUDE.md",
+    "wiki/sources/15mAh戒指能量分布详细分析-摘要.md"
+  ]
+}
