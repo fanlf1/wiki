@@ -1,0 +1,28 @@
+# Obsidian 配置文件（保留，但排除个人信息）
+.obsidian/workspace.json
+
+# 系统文件
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# 临时文件
+*.tmp
+*.temp
+*~
+
+# 交换文件
+*.swp
+*.swo
+.*.sw?
+
+# 日志文件
+*.log
+
+# 编译文件
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.pyc
