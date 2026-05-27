@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "1de942cf7a60ebda",
+        "id": "43630c6108bc9942",
         "type": "tabs",
         "children": [
           {
-            "id": "e61b17a4df2a81af",
+            "id": "8b1366d1e976dadb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "wiki/entities/Spectricity.md",
+                "file": "wiki/wiki-index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Spectricity"
+              "title": "wiki-index"
             }
           }
         ]
@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 541.5
+    "width": 222.5
   },
   "right": {
     "id": "f1c41f0e6bda4231",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "wiki/entities/Spectricity.md",
+                "file": "calendar/2026-04-24.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Spectricity 的反向链接列表"
+              "title": "2026-04-24 的反向链接列表"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "wiki/entities/Spectricity.md",
+                "file": "calendar/2026-04-24.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Spectricity 的出链列表"
+              "title": "2026-04-24 的出链列表"
             }
           },
           {
@@ -156,13 +156,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "wiki/entities/Spectricity.md",
+                "file": "calendar/2026-04-24.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Spectricity 的大纲"
+              "title": "2026-04-24 的大纲"
             }
           }
         ]
@@ -183,33 +183,55 @@
       "bases:新建数据库": false
     }
   },
-  "active": "e61b17a4df2a81af",
+  "active": "8b1366d1e976dadb",
   "lastOpenFiles": [
-    "wiki/entities/Andrej Karpathy.md",
-    "wiki/sources/智能戒指硬件架构-摘要.md",
-    "wiki/sources/无创血糖监测难点与技术对策-摘要.md",
-    "wiki/sources/睿芯微信息收集-20260424-摘要.md",
-    "wiki/sources/全球CGM市场2025-摘要.md",
-    "wiki/concepts/混合模拟IC.md",
-    "wiki/concepts/多光谱成像.md",
-    "wiki/entities/睿芯微.md",
-    "wiki/overview.md",
-    "未命名 1.canvas",
-    "2026-04-24.md",
-    "未命名.base",
-    "未命名.canvas",
-    "wiki/sources/Tiilab无创血糖监测-摘要.md",
-    "wiki/sources/Spectricity-什么是多光谱成像-摘要.md",
-    "wiki/entities/成都睿谱微.md",
+    "wiki/show.json.tmp.83034.54ffddc6c1b2",
+    "CLAUDE.md.tmp.83034.cd4c0c110a6c",
+    "work/04_research/overview.md",
+    "work/04_research/overview.md.tmp.83034.c0397daa1af4",
+    "work/07_investors/README.md",
+    "work/07_investors/overview.md",
+    "work/06_brands/overview.md",
+    "work/05_vendors/overview.md",
+    "work/06_brands/品牌竞品总览.md",
+    "wiki/wiki-index.md",
+    "work/40_projects/gluecose/验收检查清单-操作手册-摘要.md",
+    "work/40_projects/gluecose/1_Product_Design/solution_evaluation/SoC选型/无创血糖SoC选型.md",
+    "wiki/wiki-index.md.tmp.83034.ce1e6b3cfbce",
+    "wiki/show.json.tmp.83034.e59a9a71dd43",
+    "work/40_projects/gluecose/1_Product_Design/solution_evaluation/SoC选型/可穿戴设备SoC平台对比-恒玄vs高通.md",
+    "work/40_projects/gluecose/1_Product_Design/solution_evaluation/SoC选型/无创血糖SoC选型.md.tmp.83034.b549089e1cc0",
+    "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md.tmp.83034.190a0b339209",
+    "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md.tmp.83034.9bde5b46bb16",
+    "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md.tmp.83034.e14756483082",
+    "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md.tmp.83034.f0ec8752a866",
+    "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md.tmp.83034.d7b8dd59124e",
+    "work/05_vendors/智冉医疗/智冉医疗.md",
+    "work/40_projects/README.md",
+    "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md",
     "index.md",
-    "LLM-WIKI-实操.md",
-    "raw/notes/Creteria/MARD.md",
-    "wiki/concepts/无创血糖监测.md",
-    "README.md",
-    "OBSIDIAN使用指南.md",
-    "log.md",
-    "LLM-WIKI.md",
+    "work/05_vendors/恒玄科技/恒玄科技.md",
+    "work/05_vendors/1_Industry/无屏手表到来-供应链新玩法-摘要.md",
+    "work/04_research/健康算法/健康算法供应商对比-WBD-NOHAYO-B-Secur-Focus.md",
+    "work/04_research/CGM/README.md",
+    "work/06_brands/CGM/CGM市场.md",
+    "work/04_research/HRV-平静度/README.md",
+    "work/04_research/BCI/README.md",
     "CLAUDE.md",
-    "wiki/sources/15mAh戒指能量分布详细分析-摘要.md"
+    "log.md",
+    "work/06_brands/BCI/brand_matrix.md",
+    "work/06_brands/BCI/Neurable/Neurable.md",
+    "work/40_projects/gluecose/3.simulate/fda_maturity_roadmap.png",
+    "work/40_projects/gluecose/3.simulate/mard_vs_complexity.png",
+    "work/40_projects/gluecose/3.simulate/nir_dashboard.png",
+    "work/40_projects/gluecose/3.simulate/chart_time_series.png",
+    "work/40_projects/gluecose/3.simulate/chart_summary_dashboard.png",
+    "work/40_projects/gluecose/3.simulate/chart_multi_dimension.png",
+    "work/40_projects/gluecose/3.simulate/chart_error_analysis.png",
+    "work/40_projects/gluecose/3.simulate/chart_clarke_error_grid.png",
+    "work/05_vendors/TI/files/3_评估/Demo/ADS1299EEG-screenshot.png",
+    "work/05_vendors/睿芯微/files/4_商务/名片/郑宏志-CEO名片.png",
+    "未命名 1.canvas",
+    "未命名.canvas"
   ]
 }

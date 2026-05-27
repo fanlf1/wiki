@@ -26,3 +26,14 @@ desktop.ini
 *.exe
 *.o
 *.pyc
+
+# 大文件（超过30M不同步到git）
+*.webm
+*.brd
+*.mp4
+*.avi
+*.mov
+*.pdf
+*.zip
+*.rar
+*.7z

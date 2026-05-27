@@ -1,1 +1,7 @@
-{}
+{
+  "alwaysUpdateLinks": true,
+  "newFileLocation": "folder",
+  "attachmentFolderPath": "raw/assets",
+  "newFileFolderPath": "raw/notes",
+  "promptDelete": false
+}

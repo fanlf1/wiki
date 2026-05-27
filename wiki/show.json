@@ -1,0 +1,127 @@
+{
+  "version": "1.1",
+  "updated": "2026-05-27",
+  "categories": [
+    {
+      "id": "demand",
+      "name": "需求研究",
+      "description": "用户需求分析与产品机会研究",
+      "source": "work/02_demand",
+      "keyFiles": [
+        { "title": "需求全景", "path": "work/02_demand/overview.md", "description": "需求场景总览与索引" },
+        { "title": "抗衰老·代谢优化", "path": "work/02_demand/anti-age/metabolic-optimization/reports/2026-05-26-代谢抗衰老需求与产品机会研究.md", "description": "代谢抗衰老需求与产品机会" },
+        { "title": "血糖·日常监测", "path": "work/02_demand/blood-sugar/daily-monitoring/reports/2026-05-26-糖尿病日常血糖监测需求与无创戒指机会研究.md", "description": "糖尿病日常血糖监测与无创戒指机会" },
+        { "title": "血糖·健身追踪", "path": "work/02_demand/blood-sugar/fitness-tracking/reports/2026-05-26-健身餐后血糖追踪需求与可行性研究.md", "description": "健身餐后血糖追踪需求与可行性" },
+        { "title": "脑力·专注管理", "path": "work/02_demand/brain/focus-management/reports/2026-05-26-脑力专注管理需求与产品定位研究.md", "description": "脑力专注管理需求与产品定位" },
+        { "title": "脑力·冥想平静", "path": "work/02_demand/brain/meditation-calm/reports/2026-05-26-冥想平静监测需求与可行性研究.md", "description": "冥想平静监测需求与可行性" },
+        { "title": "智能家居·激光灭蚊", "path": "work/02_demand/SmartHome/激光灭蚊/Demand_Analysis.md", "description": "激光灭蚊需求分析" }
+      ]
+    },
+    {
+      "id": "concepts",
+      "name": "创新想法",
+      "description": "创新想法与概念定义",
+      "source": "work/03_concept",
+      "keyFiles": []
+    },
+    {
+      "id": "research",
+      "name": "调研课题",
+      "description": "技术研究、课题调研与深度分析",
+      "source": "work/04_research",
+      "keyFiles": [
+        { "title": "BCI脑机接口", "path": "work/04_research/BCI/README.md", "description": "脑机接口技术研究总览" },
+        { "title": "CGM持续血糖监测", "path": "work/04_research/CGM/README.md", "description": "持续血糖监测技术调研" },
+        { "title": "HRV·平静度", "path": "work/04_research/HRV-平静度/README.md", "description": "HRV与平静度评估" },
+        { "title": "HRV·认知疲劳", "path": "work/04_research/HRV-认知疲劳/README.md", "description": "HRV与认知疲劳监测" },
+        { "title": "多标志物·光谱检测", "path": "work/04_research/多标志物-光谱检测/README.md", "description": "多标志物单传感器与光谱检测" },
+        { "title": "高光谱·无创血糖", "path": "work/04_research/高光谱-无创血糖/README.md", "description": "高光谱成像无创血糖监测技术" },
+        { "title": "戒指功耗", "path": "work/04_research/戒指功耗/智能戒指硬件架构-摘要.md", "description": "智能戒指硬件架构与功耗分析" },
+        { "title": "健康算法对比", "path": "work/04_research/健康算法/健康算法供应商对比-WBD-NOHAYO-B-Secur-Focus.md", "description": "健康算法供应商对比" }
+      ]
+    },
+    {
+      "id": "vendors",
+      "name": "供应商",
+      "description": "供应商技术评估与选型",
+      "source": "work/05_vendors",
+      "keyFiles": [
+        { "title": "供应商总览", "path": "work/05_vendors/overview.md", "description": "已跟踪供应商清单与分类" },
+        { "title": "行业·智能穿戴峰会", "path": "work/05_vendors/1_Industry/2026智能穿戴生态融合创新峰会-摘要.md", "description": "2026智能穿戴生态融合创新峰会要点" },
+        { "title": "行业·CES 2027", "path": "work/05_vendors/1_Industry/CES-2027信息收集-摘要.md", "description": "CES 2027展会信息" },
+        { "title": "行业·健康监测厂商", "path": "work/05_vendors/1_Industry/健康监测厂商调研-20260509.md", "description": "健康监测厂商全景调研" },
+        { "title": "行业·戒指形态分析", "path": "work/05_vendors/1_Industry/戒指形态产品可行性分析.md", "description": "戒指形态产品可行性分析" },
+        { "title": "行业·无屏手表", "path": "work/05_vendors/1_Industry/无屏手表到来-供应链新玩法-摘要.md", "description": "无屏手表供应链分析" },
+        { "title": "行业·潮电智库", "path": "work/05_vendors/1_Industry/智库/潮电智库.md", "description": "潮电智库行业报告" },
+        { "title": "Espressif乐鑫", "path": "work/05_vendors/Espressif乐鑫/Espressif乐鑫.md", "description": "Wi-Fi/蓝牙MCU" },
+        { "title": "恒玄科技", "path": "work/05_vendors/恒玄科技/恒玄科技.md", "description": "BES2800系列AIoT芯片" },
+        { "title": "BES2800BP·CSI2与AI详解", "path": "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md", "description": "CSI2接口与AI算力对比STM32N6和高通Wear" },
+        { "title": "高通", "path": "work/05_vendors/高通/高通.md", "description": "Snapdragon Wear可穿戴平台" },
+        { "title": "ST", "path": "work/05_vendors/ST/files/STM32N675-AI性能深度解析.md", "description": "STM32N675 AI性能解析" },
+        { "title": "Spectricity", "path": "work/05_vendors/Spectricity/files/1_公司/背景/Spectricity-公司主页.md", "description": "多光谱成像技术" },
+        { "title": "睿芯微", "path": "work/05_vendors/睿芯微/files/2_产品/手册/无创血糖检测项目介绍.md", "description": "无创血糖CIS方案" },
+        { "title": "多感科技", "path": "work/05_vendors/多感科技/files/多感科技近红外多光谱介绍-摘要.md", "description": "近红外多光谱方案" },
+        { "title": "MCU选型对比", "path": "work/05_vendors/MCU/files/低功耗MCU选型对比报告-摘要.md", "description": "低功耗MCU选型对比" },
+        { "title": "Neurable", "path": "work/05_vendors/Neurable/files/Neurable脑机接口公司深度调研-摘要.md", "description": "脑机接口公司调研" },
+        { "title": "tiilab", "path": "work/05_vendors/tiilab/files/Tiilab无创血糖监测-摘要.md", "description": "无创血糖可穿戴方案" },
+        { "title": "成都睿谱微", "path": "work/05_vendors/成都睿谱微/成都睿谱微.md", "description": "光谱芯片供应商" },
+        { "title": "晶相光电", "path": "work/05_vendors/晶相光电/files/JX-F28P-CIS规格书-摘要.md", "description": "CIS图像传感器" },
+        { "title": "瑞声科技", "path": "work/05_vendors/瑞声科技/瑞声科技.md", "description": "精密元器件与光学" },
+        { "title": "炬光科技", "path": "work/05_vendors/炬光科技/炬光科技.md", "description": "激光光学元器件" },
+        { "title": "艾为电子", "path": "work/05_vendors/艾为电子/艾为电子.md", "description": "模拟IC设计" },
+        { "title": "芯海科技", "path": "work/05_vendors/芯海科技/芯海科技.md", "description": "信号链MCU" },
+        { "title": "迈塔兰斯", "path": "work/05_vendors/迈塔兰斯/迈塔兰斯.md", "description": "超透镜技术" },
+        { "title": "钛方科技", "path": "work/05_vendors/钛方科技/钛方科技.md", "description": "压力触控方案" },
+        { "title": "麦斯卓微", "path": "work/05_vendors/麦斯卓微/麦斯卓微.md", "description": "MEMS传感器" },
+        { "title": "智冉医疗", "path": "work/05_vendors/智冉医疗/智冉医疗.md", "description": "医疗设备" },
+        { "title": "极豪科技", "path": "work/05_vendors/极豪科技/极豪科技.md", "description": "指纹识别方案" },
+        { "title": "欧姆龙", "path": "work/05_vendors/欧姆龙/欧姆龙.md", "description": "健康医疗设备" }
+      ]
+    },
+    {
+      "id": "brands",
+      "name": "品牌竞品",
+      "description": "品牌分析与竞品情报",
+      "source": "work/06_brands",
+      "keyFiles": [
+        { "title": "BCI品牌矩阵", "path": "work/06_brands/BCI/brand_matrix.md", "description": "BCI品牌竞争格局" },
+        { "title": "CGM市场概览", "path": "work/06_brands/CGM/CGM市场.md", "description": "CGM市场全景分析" },
+        { "title": "CGM品牌矩阵", "path": "work/06_brands/CGM/brand_matrix.md", "description": "CGM品牌竞争格局" },
+        { "title": "Ring品牌矩阵", "path": "work/06_brands/Ring/brand_matrix.md", "description": "智能戒指品牌竞争格局" },
+        { "title": "Watch品牌矩阵", "path": "work/06_brands/Watch/brand_matrix.md", "description": "智能手表品牌竞争格局" }
+      ]
+    },
+    {
+      "id": "investors",
+      "name": "投资机构",
+      "description": "VC/CVC/PE投资情报",
+      "source": "work/07_investors",
+      "keyFiles": [
+        { "title": "投资机构总览", "path": "work/07_investors/README.md", "description": "已跟踪投资机构清单" },
+        { "title": "a16z Bio+Health", "path": "work/07_investors/a16z-Bio-Health/a16z-Bio-Health.md", "description": "Andreessen Horowitz生物健康基金" },
+        { "title": "GV", "path": "work/07_investors/GV-Google-Ventures/GV-Google-Ventures.md", "description": "Google Ventures" },
+        { "title": "HongShan红杉", "path": "work/07_investors/HongShan/HongShan.md", "description": "红杉中国" },
+        { "title": "Huawei Hubble", "path": "work/07_investors/Huawei-Hubble/Huawei-Hubble.md", "description": "华为哈勃投资" },
+        { "title": "Khosla Ventures", "path": "work/07_investors/Khosla-Ventures/Khosla-Ventures.md", "description": "Khosla风投" },
+        { "title": "Lenovo Capital", "path": "work/07_investors/Lenovo-Capital/Lenovo-Capital.md", "description": "联想创投" },
+        { "title": "OPPO", "path": "work/07_investors/OPPO/OPPO.md", "description": "OPPO投资" },
+        { "title": "Qiming VC", "path": "work/07_investors/Qiming-VC/Qiming-VC.md", "description": "启明创投" },
+        { "title": "VIVO", "path": "work/07_investors/VIVO/VIVO.md", "description": "VIVO投资" },
+        { "title": "Xiaomi·Shunwei", "path": "work/07_investors/Xiaomi-Shunwei/Xiaomi-Shunwei.md", "description": "小米·顺为" }
+      ]
+    },
+    {
+      "id": "projects",
+      "name": "项目管理",
+      "description": "项目进度、任务与交付物",
+      "source": "work/40_projects",
+      "keyFiles": [
+        { "title": "项目总览", "path": "work/40_projects/README.md", "description": "项目索引与状态" },
+        { "title": "睿芯微CIS验证", "path": "work/40_projects/gluecose/2026-04-29-睿芯微CIS方案技术验证/README.md", "description": "睿芯微CIS方案技术验证项目" },
+        { "title": "无创血糖SoC选型", "path": "work/40_projects/gluecose/1_Product_Design/solution_evaluation/SoC选型/无创血糖SoC选型.md", "description": "CSI-2接口决定论：STM32N675 vs 高通Wear vs BES2800BP" },
+        { "title": "甲方验收方案", "path": "work/40_projects/gluecose/甲方验收方案-摩托罗拉-摘要.md", "description": "摩托罗拉验收方案" },
+        { "title": "验收操作手册", "path": "work/40_projects/gluecose/验收检查清单-操作手册-摘要.md", "description": "验收检查清单与操作手册" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+Report date,Phase,Block,Source,Severity,Status,Issue,Doc,Owner,Assistant,Sheet,Change?,武汉实验室 失效分析汇总
+2024/10/29,D.SHIP,2.Power,6.Issue,NA,NA,"[s2]Issue:SOC not change ，always 60%-Wrangler aftersale
+Clue: 1. SW setting SOC to 60%  and voltage to 4.2V when fuel gauge not work.
+             2. reassembly 2 units battery connector and  issue gone.
+Root Cause:  suspect battery connect issue.Why ？waiting for fail unit back 
+Solution:     ",link,文亭,李果,,,
+2024/6/4,B.PVT,2.Power,5.4 ALT,NA,NA,"Issue: PVT MXC06 Unable to power on 4台
+Clue:PMK_VREG_BB is only 0.5V at msm side and 1.2V at PMK7450 2pcs;
+          VREG_SYS_1P8在PMK6450端电压为0V,在PM6450端电压正常，2pcs.
+Root Cause:PMK_VREG_BB 在Layer11平行屏蔽盖轨迹的地方断开 ；
+                      VREG_SYS_1P8在L11层往PMK6450方向屏蔽盖轨迹下断开
+Solution: 加宽PMK_VREG_BB 在Layer11平行屏蔽盖轨迹这一段的走线；
+                 加宽L11层VREG_SYS_1P8横向走线(未导入PCB)",,敏敏,文亭,Link,,
+2024/5/22,B.PVT,3.Charging,5.3 EE DVT,S1,Closed,"Issue: WH178095  EDu15 Soft Shorts test After OTG 2 ohm resistance Soft Short,OTG no function and data transmission no function(10:37 5/20/2024),unable to recovery after restart.D2 
+Clue: in OTG mode Vbus is ok but  USB not   (ADB and fastboot can not work too in USB mode )
+Root Cause:  sub board TVS on USB D+ damaged （TVS502）. USBD+ is not related to EDU15 test purpose. (short Vbus to GND ,but not D+)
+suspect the tester mistake short Vbus to D+ .
+Solution:    N/A ,monitor",link,文亭,韩凯,,,
+2024/5/9,7.DVT2,5.Camera,5.6 User Feedback,S1,Closed,"Issue: user feedback,录像状态下有主摄有异响
+Clue:OISVDD电压3.3V高于模组要求的2.8V
+Root Cause:  OISVDD电压3.3V高于模组要求的2.8V，为何回响camera KP分析中
+Solution:  change LDO to 2.8V output LDO（PN：SC98D62703）",,韩凯,敏敏,link,,
+2024/5/8,7.DVT2,2.Power,5.4 ALT,S2,Closed,"Issue:MXC06 WH177228 Unable to power on:D1/D2(270）
+Clue:PMK_VREG_BB is only 0.5V at msm side and 1.2V at PMK7450
+Root Cause:PMK_VREG_BB 在Layer11平行屏蔽盖轨迹的地方断开 
+Solution: 加宽PMK_VREG_BB 在Layer11平行屏蔽盖轨迹这一段的走线",,敏敏,文亭,Link,,
+2024/5/7,7.DVT2,3.Charging,5.6 User Feedback,NA,NA,"issue:Charging  slow in  DF
+",,文亭,德太加,link,,
+2024/4/3,7.DVT2,7.Sensor,5.4 ALT,S1,Closed,"issue：Wh176592：DVT2一供ALT India 15kV AD capsensor Ch1 no function
+Clue1：ch1通路阻值异常，只有100ohm
+Clue2：参考通道下地电容耐压只有25V
+Clue3：上支架ANT1 LDS pattern距后盖缝隙很近（天线功率不足需要足够LDS pattern需要足够靠近边框天线）
+Clue4：R3708 短路 
+Root Cause：Ch1线路扛静电能力不足，能量从LDS进入冲击CH1 R3708，导致器  
+                        件单体短路，检测通路异常
+solution：
+                 2、L113 变更为21014050209（27pF，50V耐压）
+                 3、改版主板，线路上增加一个TVS预留位
+PVT验证",,韩凯,,link,,
+2024/4/3,5.DVT1,7.Sensor,5.4 ALT,S3,Closed,"issue: DVT1 2供 ESD Air -8K capsensor no function,recovery after reboot
+Clue1：上支架ANT1 LDS pattern距后盖缝隙很近（天线功率不足需要足够LDS pattern需要足够靠近边框天线）
+厦门和武汉无法复现",,韩凯,,link,,
+2024/4/3,5.DVT1,9.Memory,5.4 ALT,S1,Closed,"issue: Unable to enter system:D5(270) 3/26/2023,
+Clue: 1.按power键上电不保持
+           2. 按压memory 可以正常开机
+rootcause: memory 虚焊，点胶不均匀，memory表面有胶水和屏蔽盖粘连，侧面无明显点胶量，转ME优化点胶",,敏敏,嘉琨,link,5.SW/ME/RF/ANT/Component/MFG/Vendor,
+2024/4/2,5.DVT1,2.Power,5.3 EE DVT,S2,Closed,"Issue:DVT LotX tumble Unexpected auto power off:D1（225滚）
+
+clue: 1.  不开机
+          2. 接上假电池(没有开机)，量测B_PLUS(VPH_PWR)电压及VBAT端的电流,VBAT上面每隔1s会有1.45A(MAX)的电流，把B_PLUS(VPH_PWR)从4V 拉到3.574V
+           3. 加焊后按压还是会自动关机，大概率还是PM8350B本体故障，寄回武汉做PM8350BH 芯片交叉验，问题依旧
+            4. PM7325有裂纹和破损，PM7325 VREG_SYS_1P8 ，BAB后，PM7325  VREG_SYS_1P8 电压正常，问题依然是不开机，但是由于板子变形严重，分析截止",,敏敏,,LINK,,
+2024/3/18,5.DVT1,3.Charging,5.4 ALT,S3,Closed,"issue：DVT1 1st stack WLC 红墨水fail, 第二方案WLC 红墨水fail
+[s3]Issue ：DVT1 WLC 红墨水实验fail
+       Clue：1. 脱落pin不影响WLC功能，功能检查正常，判断会影响充电性能，用户无法感知。
+                   2. 两次实验，脱落位置不固定，第二页和第三页图示
+                     3. stack板装配后虚空，怀疑在跌落或者震动的时候，stack板晃动导致wlc芯片部分管脚脱落
+Solution：  
+              ME owner
+               基带看是否可以优化WLC的开窗，增加焊接面积",,文亭,,link,5.SW/ME/RF/ANT/Component/MFG/Vendor,
+2024/4/1,5.DVT1,4.Audio,5.4 ALT,S1,Closed,"Issue: DVT1 ALT 2供ALT跌落碰撞，USB板Speaker信号线串联的L303，L304 脱落
+rootcause： 器件在板边，怀疑应力问题？ 另此类器件铜丝绕线到焊盘底部且二供焊盘0.8*0.3，一供0.8*0.4
+solution:  1. L303.L304位置向板内移动，支线发版验证。
+
+分析：
+1) 结构壳体尺寸正常，未出现撞击的痕迹
+2) 二供的焊接面会比一供小，如下图二和图三，
+3) SMT工程师分析，二供的焊接正常，不存在焊接问题
+4）一供器件焊盘0.8*0.4， 二供的器件设计焊盘0.8*0.3。二供器件焊盘小，会出现图二的问题。 器件实体焊盘如下图四，图五
+5）此类器件铜丝绕线到焊盘底部，并且器件侧面不爬锡，SMT工程师反馈之前项目这种设计，线把底部顶起来发生过器件偏移和脱落。 
+
+",,院长,芳梅,link,5.SW/ME/RF/ANT/Component/MFG/Vendor,
+2024/3/29,5.DVT1,6.Display/Touch,4.Build,S3,Closed,"Issue: DVT1二供组装，3台华星屏幕显示偏绿，KP反馈现象跟随主板
+analysis: 1. 现象固定，此主板搭配天马屏幕ok, 搭配所有华星屏幕发绿
+                 2. fastboot下显示ok， kernel 异常，怀疑有参数更改，监控从正常到变绿时，电压，帧率，MIPI clk均正常
+                 3. AP mipi data 测试，相同主板，点白色图片。天马模组MIPI data 波形正常，华星模组MIPI data异常，说明使用华星模组时，AP有对白色图片进行处理。
+ 样机寄送供应商分析： 
+1.IC bist画面测试，白色色坐标正常。---说明模组及相关设定正常。
+2. 删除效果参数，偏绿没有变化。
+3. 删除效果参数及校准文件，偏绿恢复正常。
+4. 将校准文件重新写入，效果正常。
+
+rootcause: 华星效果参数用错成别的项目，需要重新调试效果参数。DVT2已经导入新参数，目前未报问题",,芳梅,,link,4.Parameter,
+2024/3/7,5.DVT1,5.Camera,6.Issue,S3,Closed,"Issue：front camera RCN value exceed standard
+analysis: 
+rootcause: crosstalk from display
+solution: remove to KP yaocf1",,邦邦,,,,
+2024/3/5,5.DVT1,5.Camera,6.Issue,S3,Closed,"Issue：DVT1 CQA test camera0 N78 干扰测试failed , failure 1pcs (测2台)，批量数据待测
+rootcause: MainCamera CPHY interfered from  thermal graphite film coupled radiation  of n78 on ANT9 
+solution: change the shape of graphite to avoid  overlap the main camera connector fromDVT2",,邦邦,,link,5.SW/ME/RF/ANT/Component/MFG/Vendor,
+2024/3/2,5.DVT1,10.USB-C,4.Build,,Closed,"Issue: Sub usb Type-C连接器屏蔽壳对地短接的电阻被ANT删除，这6颗电容位按照最初讨论为DCM 贴电容，ROW 贴0R，ANT为兼容DCM和ROW公用天线，直接将ROW 这6颗本来贴0R 电阻 DNS掉
+Rootcause ： 此6颗接地位需要和BB/RF一起商定贴片方案及铁壳接地方案，ANT在warroom上提出问题，但未收集到BB和RF反馈，直接修改方案
+solution：DVT1 贴0R下地，ANT 优化天线设计，
+                DVT2 因为DCM SKU删除，不需要兼容DCM，DVT2小板删除预留电容位，直接铁壳打孔接地-done
+lesson learn ；职责划分清楚，兼容部分涉及到更改，需要同步到ANT ,BB ,RF ,若需更改BOM，需要提交给基带进行修改",,芳梅,文亭,wrangler usb typec屏蔽壳接地方式评估,2.PCB,
+2024/2/21,4.EVT,1.Platform,5.4 ALT,,Closed,"Issue：EVT  EMEA P+ESIM， Unable to read PSIM Card ， failure 4pcs （2 Alt, 2 xiamen ant ）
+Rootcause ：校准数据丢失",,liguoa,,,5.SW/ME/RF/ANT/Component/MFG/Vendor,
+2024/1/31,4.EVT,12.EMC,5.3 EE DVT,S3,Closed,"Issue：EVT EDU14   surge test fail on VBAT test point test ，200V fail.
+clue：B_PLUS short to GND
+Rootcause ：U1571        PM7350C  damaged in surge test
+                 surge TVS layout is not best
+solution：Optimize Vbat TVS layout . monitor DVT1 test
+lesson learn: add Vbat  surge TVS layout in  checklist 。DVT1 pass",,韩凯,敏敏,,2.PCB,
+2024/1/29,4.EVT,3.Charging,4.Build,NA,Closed,"RISK：add WLC TX  function，PCMCR：https://idart.mot.com/browse/PCMWRANGLE-7
+Solution：Go with Option1 （1.PM8350B change to PM8350BH bacause PM8350B only support 5V haptic boost but PM8350BH support 10V haptic boost 2.add a loadswitch to get power from haptic boost，3.add TX Modulation and Demodulation component  4.DNI FW update power MOSs because can reuse haptic boost power from Loadswitch）.
+Change import from DVT1 。DVT1 ongoing ，TX function ok。detail tuning ongoing",link,文亭,,,1.SCH,
+2024/1/29,4.EVT,1.Platform,4.Build,NA,Closed,"Issue ：India P+P SKU SIM2 can't not recognized
+Rootcause： The VSIM2 power supply design is different in the S21 and S54K
+Solution：VSIM2 resistor  is disconnected inS21 desgin
+                  ",,liguoa,芳梅,,1.SCH,
+2024/1/22,4.EVT,3.Charging,4.Build,NA,Closed,"Risk ：SC8549D may not able to work ，About 30% on Glory&Aura
+Clue：1.incoming date Later than 20231222 lot should have problem
+2.Wrangler EVT ：E03 35pcs，  E05 8pcs firstboard ， E04 30+pcs use Old component ，should not have problem
+         Others ~400pcs ，use new component  should  have problem.
+Issue ：india SKU  firstboard 1pcs fail/total 3 pcs.  sent fail IC to Vendor for analysis
+Rootcause：waiting for Vendor analysis
+solution ：change SC8549D to SC8541 from DVT1.
+PCMCR:https://idart.mot.com/browse/PCMWRANGLE-8",,文亭,,glory 无法快充分析,1.SCH,
+,4.EVT,2.Power,5.2 BB Test,NA,Closed,"Issue ：  power off current leakage 5.4mA
+  clue:  1. fastcharger IC(VBAT2) can reduce 0.5mA maybe charging setting issue
+             2. charging  Patch1 (CP related)： reduce 1mA .   so there is other part issue too.
+Solution:update 310 continuous build,UI power off leakage=274uA",,wuxm5,文亭,可能漏电器件汇总,5.SW/ME/RF/ANT/Component/MFG/Vendor,
+,3.PEL,1.Platform,5.1 Bring up,S3,Closed,"Issue ： camera PMIC  bringup fail & Smart PA2 bringup fail
+Rootcause： I2C address conflict on Smart PA2 & camera PMIC 2  . both are 0x35
+Solution：EVB rework  ，solution ongoing
+                   EVT change smart PA2 I2C  （have 4 I2C address option ）
+lesson：Need to add all the I2C component into Qwiki -I2C  map page. and check if I2C address conflict happen
+               when setup ,change ,add 2nd source.  ---  All Experts 
+               remind 1 time at the day before EVB gerber out---platform design owner",,chenbang,,,1.SCH,

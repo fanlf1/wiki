@@ -1,0 +1,1015 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Neurable 公司发展历程深度调研</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700&display=swap');
+
+  :root {
+    --primary: #6C5CE7;
+    --primary-dark: #5A4BD1;
+    --accent: #00CEC9;
+    --accent2: #FD79A8;
+    --dark: #0F0A1A;
+    --darker: #080510;
+    --card: rgba(255,255,255,0.06);
+    --card-border: rgba(255,255,255,0.1);
+    --text: #E8E4F0;
+    --text-dim: #A09CAF;
+    --gradient1: linear-gradient(135deg, #6C5CE7 0%, #00CEC9 100%);
+    --gradient2: linear-gradient(135deg, #FD79A8 0%, #6C5CE7 100%);
+    --gradient3: linear-gradient(135deg, #00CEC9 0%, #55EFC4 100%);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans SC', 'Inter', sans-serif;
+    background: var(--darker);
+    color: var(--text);
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  /* ===== Slide Container ===== */
+  .slides-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateX(60px);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    pointer-events: none;
+    overflow-y: auto;
+  }
+
+  .slide.active {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: all;
+  }
+
+  .slide.prev {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+
+  /* ===== Background decoration ===== */
+  .bg-orb {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(120px);
+    opacity: 0.15;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .bg-orb-1 { width: 600px; height: 600px; background: var(--primary); top: -200px; right: -100px; }
+  .bg-orb-2 { width: 400px; height: 400px; background: var(--accent); bottom: -100px; left: -100px; }
+  .bg-orb-3 { width: 300px; height: 300px; background: var(--accent2); top: 50%; left: 50%; }
+
+  /* ===== Typography ===== */
+  .slide-tag {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+
+  .slide-title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 32px;
+    background: var(--gradient1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .slide-subtitle {
+    font-size: 18px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    max-width: 700px;
+  }
+
+  /* ===== Cards ===== */
+  .card {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 24px;
+    backdrop-filter: blur(20px);
+    transition: transform 0.3s, border-color 0.3s;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    border-color: rgba(108, 92, 231, 0.4);
+  }
+
+  .card-grid {
+    display: grid;
+    gap: 16px;
+    flex: 1;
+  }
+  .card-grid.cols-2 { grid-template-columns: 1fr 1fr; }
+  .card-grid.cols-3 { grid-template-columns: 1fr 1fr 1fr; }
+  .card-grid.cols-4 { grid-template-columns: 1fr 1fr 1fr 1fr; }
+
+  .card h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .card p, .card li {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.7;
+  }
+
+  .card ul { padding-left: 16px; }
+  .card li { margin-bottom: 4px; }
+
+  /* ===== Hero Slide ===== */
+  .hero {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero-logo {
+    width: 80px; height: 80px;
+    border-radius: 20px;
+    background: var(--gradient1);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 36px; font-weight: 800; color: white;
+    margin: 0 auto 32px;
+    box-shadow: 0 20px 60px rgba(108, 92, 231, 0.4);
+  }
+  .hero h1 {
+    font-size: 56px;
+    font-weight: 800;
+    background: var(--gradient1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 16px;
+  }
+  .hero .subtitle {
+    font-size: 22px;
+    color: var(--text-dim);
+    margin-bottom: 48px;
+  }
+  .hero-meta {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+  }
+  .hero-meta-item {
+    text-align: center;
+  }
+  .hero-meta-item .value {
+    font-size: 28px;
+    font-weight: 800;
+    background: var(--gradient3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .hero-meta-item .label {
+    font-size: 13px;
+    color: var(--text-dim);
+    margin-top: 4px;
+  }
+
+  /* ===== Tables ===== */
+  .data-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 14px;
+  }
+  .data-table thead th {
+    background: rgba(108, 92, 231, 0.2);
+    color: var(--accent);
+    font-weight: 600;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: 13px;
+    letter-spacing: 0.5px;
+  }
+  .data-table thead th:first-child { border-radius: 10px 0 0 0; }
+  .data-table thead th:last-child { border-radius: 0 10px 0 0; }
+  .data-table tbody td {
+    padding: 12px 16px;
+    border-bottom: 1px solid rgba(255,255,255,0.05);
+    color: var(--text-dim);
+  }
+  .data-table tbody tr:hover td {
+    background: rgba(108, 92, 231, 0.08);
+  }
+  .data-table .highlight {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .data-table .big-num {
+    font-size: 20px;
+    font-weight: 800;
+    background: var(--gradient3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  /* ===== Timeline ===== */
+  .timeline {
+    position: relative;
+    padding-left: 40px;
+  }
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 15px; top: 0; bottom: 0;
+    width: 2px;
+    background: var(--gradient1);
+    border-radius: 2px;
+  }
+  .timeline-item {
+    position: relative;
+    margin-bottom: 28px;
+    animation: fadeInUp 0.5s ease-out both;
+  }
+  .timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -32px; top: 6px;
+    width: 12px; height: 12px;
+    border-radius: 50%;
+    background: var(--primary);
+    border: 2px solid var(--accent);
+    box-shadow: 0 0 20px rgba(108, 92, 231, 0.5);
+  }
+  .timeline-year {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--accent);
+    margin-bottom: 4px;
+  }
+  .timeline-content {
+    font-size: 14px;
+    color: var(--text-dim);
+    line-height: 1.6;
+  }
+  .timeline-content strong {
+    color: var(--text);
+  }
+
+  /* ===== Strategy Transform Cards ===== */
+  .transform-flow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  .transform-box {
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 16px 20px;
+    flex: 1;
+    text-align: center;
+  }
+  .transform-box .phase {
+    font-size: 11px;
+    color: var(--text-dim);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+  }
+  .transform-box .desc {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text);
+  }
+  .transform-box .target {
+    font-size: 12px;
+    color: var(--accent);
+    margin-top: 4px;
+  }
+  .transform-arrow {
+    font-size: 24px;
+    color: var(--primary);
+    flex-shrink: 0;
+  }
+
+  /* ===== Metrics Row ===== */
+  .metrics-row {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+  .metric {
+    flex: 1;
+    min-width: 140px;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 20px;
+    text-align: center;
+  }
+  .metric .metric-value {
+    font-size: 24px;
+    font-weight: 800;
+    background: var(--gradient1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .metric .metric-label {
+    font-size: 12px;
+    color: var(--text-dim);
+    margin-top: 6px;
+  }
+
+  /* ===== Moat Tags ===== */
+  .moat-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .moat-tag {
+    background: rgba(108, 92, 231, 0.15);
+    border: 1px solid rgba(108, 92, 231, 0.3);
+    border-radius: 20px;
+    padding: 10px 18px;
+    font-size: 13px;
+    color: var(--text);
+  }
+  .moat-tag .moat-icon { margin-right: 6px; }
+
+  /* ===== Nav ===== */
+  .nav-bar {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background: rgba(15, 10, 26, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid var(--card-border);
+    border-radius: 50px;
+    padding: 10px 24px;
+    z-index: 100;
+  }
+  .nav-btn {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    border: 1px solid var(--card-border);
+    background: var(--card);
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    transition: all 0.2s;
+  }
+  .nav-btn:hover {
+    background: var(--primary);
+    border-color: var(--primary);
+  }
+  .nav-dots {
+    display: flex;
+    gap: 6px;
+  }
+  .nav-dot {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.2);
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  .nav-dot.active {
+    background: var(--accent);
+    width: 24px;
+    border-radius: 4px;
+  }
+  .slide-counter {
+    font-size: 13px;
+    color: var(--text-dim);
+    min-width: 50px;
+    text-align: center;
+  }
+
+  /* ===== Progress bar ===== */
+  .progress-bar {
+    position: fixed;
+    top: 0; left: 0;
+    height: 3px;
+    background: var(--gradient1);
+    z-index: 100;
+    transition: width 0.4s ease;
+  }
+
+  /* ===== Animations ===== */
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .fade-in { animation: fadeInUp 0.6s ease-out both; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; }
+  .delay-4 { animation-delay: 0.4s; }
+  .delay-5 { animation-delay: 0.5s; }
+
+  /* ===== Content layout helpers ===== */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    flex: 1;
+    min-height: 0;
+  }
+  .col { overflow-y: auto; }
+  .section-gap { margin-top: 24px; }
+
+  /* ===== Product roadmap ===== */
+  .product-roadmap {
+    display: flex;
+    gap: 12px;
+    flex: 1;
+  }
+  .product-card {
+    flex: 1;
+    background: var(--card);
+    border: 1px solid var(--card-border);
+    border-radius: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+  }
+  .product-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: var(--gradient1);
+  }
+  .product-card .year {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--accent);
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+  .product-card .name {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 10px;
+  }
+  .product-card .desc {
+    font-size: 13px;
+    color: var(--text-dim);
+    line-height: 1.6;
+    flex: 1;
+  }
+  .product-card .tag {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+  }
+  .tag-prototype { background: rgba(253,121,168,0.2); color: #FD79A8; }
+  .tag-product { background: rgba(0,206,201,0.2); color: #00CEC9; }
+  .tag-platform { background: rgba(108,92,231,0.2); color: #6C5CE7; }
+
+  /* ===== Sources footer ===== */
+  .sources-list {
+    font-size: 11px;
+    color: rgba(160,156,175,0.6);
+    line-height: 1.8;
+  }
+  .sources-list a {
+    color: rgba(0,206,201,0.5);
+    text-decoration: none;
+  }
+
+  /* ===== Keyboard hint ===== */
+  .key-hint {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.2);
+    z-index: 100;
+  }
+  .key-hint kbd {
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+    padding: 2px 8px;
+    font-family: inherit;
+  }
+</style>
+</head>
+<body>
+
+<div class="bg-orb bg-orb-1"></div>
+<div class="bg-orb bg-orb-2"></div>
+<div class="bg-orb bg-orb-3"></div>
+
+<div class="progress-bar" id="progressBar"></div>
+
+<div class="key-hint">
+  <kbd>←</kbd> <kbd>→</kbd> 翻页 &nbsp; <kbd>F</kbd> 全屏
+</div>
+
+<div class="slides-container" id="slidesContainer">
+
+  <!-- ========== Slide 1: Hero ========== -->
+  <div class="slide hero active" data-index="0">
+    <div class="hero-logo fade-in">N</div>
+    <h1 class="fade-in delay-1">Neurable</h1>
+    <p class="subtitle fade-in delay-2">从可穿戴到可思考 — 消费级脑机接口先行者</p>
+    <div class="hero-meta fade-in delay-3">
+      <div class="hero-meta-item">
+        <div class="value">$6500万</div>
+        <div class="label">累计融资</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="value">2015</div>
+        <div class="label">创立年份</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="value">波士顿</div>
+        <div class="label">总部</div>
+      </div>
+      <div class="hero-meta-item">
+        <div class="value">MW75 Neuro</div>
+        <div class="label">旗舰产品</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Slide 2: 创始人 ========== -->
+  <div class="slide" data-index="1">
+    <div class="slide-tag">Chapter 01</div>
+    <div class="slide-title">创始人：Dr. Ramses Alcaide</div>
+    <div class="two-col">
+      <div class="col">
+        <div class="card fade-in" style="margin-bottom:16px">
+          <h3>🎓 学术背景</h3>
+          <ul>
+            <li>PhD 电气工程，密歇根大学</li>
+            <li>直接脑接口实验室，师从 Dr. Jane Huggins</li>
+            <li>研究：新型脑机接口、EEG系统、精英运动员脑电</li>
+          </ul>
+        </div>
+        <div class="card fade-in delay-2">
+          <h3>💡 创立动机</h3>
+          <p>个人经历驱使 — 家庭成员事故，立志让BCI技术帮助更多人</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card fade-in delay-1" style="margin-bottom:16px">
+          <h3>🏢 创业经历</h3>
+          <ul>
+            <li>Pharo LLC CEO（管理高影响力健康项目）</li>
+            <li>2015年创立 Neurable</li>
+            <li>定位：AI软件公司，脑信号→可操作洞察</li>
+          </ul>
+        </div>
+        <div class="card fade-in delay-3">
+          <h3>🎤 行业影响力</h3>
+          <ul>
+            <li>LEAP大会演讲嘉宾</li>
+            <li>ITU AI for Good 主题演讲</li>
+            <li>消费级BCI领域最具影响力人物之一</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Slide 3: 发展时间线 ========== -->
+  <div class="slide" data-index="2">
+    <div class="slide-tag">Chapter 02</div>
+    <div class="slide-title">发展时间线</div>
+    <div class="two-col">
+      <div class="col">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2015 — 学术起源</div>
+            <div class="timeline-content">Ramses 在密歇根大学完成BCI核心技术研究，<strong>正式创立 Neurable</strong>。定位AI软件公司，利用脑传感技术将脑信号转化为可操作洞察。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2015-2020 — 技术验证</div>
+            <div class="timeline-content">开发 Enten BCI耳机原型。发布白皮书《Neurable Enten Earphone EEG Focus Estimation》。从<strong>VR意念交互</strong>转向<strong>消费级专注力追踪</strong>。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2020-2024 — 产品化</div>
+            <div class="timeline-content">与 <strong>Master & Dynamic</strong> 达成战略合作。将BCI传感器集成到高端耳机耳垫中。<strong>2024.9.24</strong>：MW75 Neuro 正式发布 — 全球首款消费级BCI耳机。</div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">2025 — 规模化起步</div>
+            <div class="timeline-content">MW75 Neuro LT 发布（更轻更便宜）。App全面重构。<strong>2025.12.19：完成 $3500万 A轮融资</strong>，累计融资 $6500万。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">2026 — 平台化元年</div>
+            <div class="timeline-content"><strong>CES 2026</strong>：HyperX合作脑追踪游戏耳机获最高荣誉。<strong>4月</strong>：正式推出技术授权平台 <strong>Neurable Veo</strong>，面向OEM厂商开放。</div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-year">战略口号</div>
+            <div class="timeline-content"><strong>"从可穿戴到可思考"</strong>（Wearables to Thinkables）— 从单一产品公司转型为BCI技术平台公司。</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Slide 4: 融资 ========== -->
+  <div class="slide" data-index="3">
+    <div class="slide-tag">Chapter 03</div>
+    <div class="slide-title">投资与融资</div>
+    <div class="metrics-row fade-in" style="margin-bottom:24px">
+      <div class="metric">
+        <div class="metric-value">$6500万</div>
+        <div class="metric-label">累计融资总额</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value">$3500万</div>
+        <div class="metric-label">A轮融资 (2025.12)</div>
+      </div>
+      <div class="metric">
+        <div class="metric-value">$3000万</div>
+        <div class="metric-label">种子/早期融资</div>
+      </div>
+    </div>
+    <div class="two-col" style="flex:1">
+      <div class="col">
+        <div class="card fade-in delay-1" style="height:100%">
+          <h3>💰 融资历程</h3>
+          <table class="data-table" style="margin-top:8px">
+            <thead>
+              <tr><th>时间</th><th>轮次</th><th>金额</th><th>领投</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2015-2020</td><td>种子/早期</td><td class="highlight">~$3000万</td><td>—</td></tr>
+              <tr><td>2025.12</td><td class="highlight">A轮</td><td class="big-num">$3500万</td><td>Spectrum Moonshot</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card fade-in delay-2" style="height:100%">
+          <h3>🏛️ 投资方分析</h3>
+          <ul style="margin-top:8px">
+            <li><strong>Spectrum Moonshot Fund</strong> — A轮领投，关注突破性技术，支持平台化转型</li>
+            <li style="margin-top:10px"><strong>Pace Ventures</strong> — 早期+跟投，长期支持者，看好BCI消费化</li>
+            <li style="margin-top:10px"><strong>M Ventures（默克风投）</strong> — 制药巨头旗下，看重BCI健康医疗潜力</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Slide 5: 团队 ========== -->
+  <div class="slide" data-index="4">
+    <div class="slide-tag">Chapter 04</div>
+    <div class="slide-title">团队演变</div>
+    <div class="card-grid cols-2" style="margin-bottom:20px; flex:none;">
+      <div class="card fade-in">
+        <h3>👤 Dr. Ramses Alcaide</h3>
+        <p>创始人兼CEO<br>神经科学家 · 密歇根大学PhD · Pharo LLC前CEO</p>
+      </div>
+      <div class="card fade-in delay-1">
+        <h3>👤 Adam Molnar</h3>
+        <p>战略合作副总裁<br>负责HyperX、Master & Dynamic等品牌合作</p>
+      </div>
+    </div>
+    <div class="card-grid cols-3 fade-in delay-2" style="flex:1">
+      <div class="card" style="border-top:3px solid #FD79A8">
+        <h3>🔬 研究期 (2015-2020)</h3>
+        <p>小型研究团队<br>以算法和软件为核心<br><strong>技术导向</strong></p>
+      </div>
+      <div class="card" style="border-top:3px solid #00CEC9">
+        <h3>📦 产品化期 (2020-2024)</h3>
+        <p>扩充硬件集成<br>产品设计、音频工程<br><strong>产品导向</strong></p>
+      </div>
+      <div class="card" style="border-top:3px solid #6C5CE7">
+        <h3>🌐 平台化期 (2025-2026)</h3>
+        <p>增加BD、OEM合作<br>平台工程团队<br><strong>平台导向</strong></p>
+      </div>
+    </div>
+    <p class="fade-in delay-3" style="margin-top:16px;font-size:13px;color:var(--text-dim);text-align:center;">
+      估计员工 50-100人 · A轮后加速招聘（工程、BD、市场）
+    </p>
+  </div>
+
+  <!-- ========== Slide 6: 产品演进 ========== -->
+  <div class="slide" data-index="5">
+    <div class="slide-tag">Chapter 05</div>
+    <div class="slide-title">产品开发演进</div>
+    <div class="product-roadmap fade-in">
+      <div class="product-card">
+        <div class="year">2015-2020</div>
+        <div class="name">Enten</div>
+        <div class="desc">BCI研究原型<br>干电极系统<br>白皮书发布<br>VR意念交互概念</div>
+        <span class="tag tag-prototype">概念原型</span>
+      </div>
+      <div class="product-card">
+        <div class="year">2024.9</div>
+        <div class="name">MW75 Neuro</div>
+        <div class="desc">全球首款消费级BCI耳机<br>12ch EEG耳机<br>Master & Dynamic合作<br>专注力追踪·脑健康报告</div>
+        <span class="tag tag-product">旗舰产品</span>
+      </div>
+      <div class="product-card">
+        <div class="year">2025</div>
+        <div class="name">MW75 Neuro LT</div>
+        <div class="desc">更轻更便宜<br>同样算法平台<br>用户体验升级<br>面向大众消费者</div>
+        <span class="tag tag-product">轻量版</span>
+      </div>
+      <div class="product-card">
+        <div class="year">2025-2026</div>
+        <div class="name">HyperX 游戏耳机</div>
+        <div class="desc">HP旗下品牌合作<br>游戏状态优化<br>Tilt预防<br>CES 2026最高荣誉</div>
+        <span class="tag tag-product">垂直场景</span>
+      </div>
+      <div class="product-card">
+        <div class="year">2026</div>
+        <div class="name">Neurable Veo</div>
+        <div class="desc">技术授权平台<br>面向OEM厂商<br>可集成耳机/耳塞/更多<br>全品类可穿戴BCI</div>
+        <span class="tag tag-platform">平台化</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Slide 7: 技术突破 ========== -->
+  <div class="slide" data-index="6">
+    <div class="slide-tag">Chapter 06</div>
+    <div class="slide-title">核心技术突破</div>
+    <div class="card-grid cols-2" style="margin-bottom:20px; flex:1">
+      <div class="col">
+        <div class="card fade-in" style="margin-bottom:16px; border-left:3px solid #FD79A8">
+          <h3>🧵 干式织物EEG传感器</h3>
+          <p>编织导电纤维，无需凝胶，即戴即用。<br>编织到耳机耳垫中，用户完全无感。</p>
+        </div>
+        <div class="card fade-in delay-1" style="margin-bottom:16px; border-left:3px solid #00CEC9">
+          <h3>🧠 Neurable AI 算法</h3>
+          <p>基于<strong>业内最大真实世界EEG数据集</strong>训练。<br>从噪声中提取有意义的认知指标。</p>
+        </div>
+        <div class="card fade-in delay-2" style="border-left:3px solid #6C5CE7">
+          <h3>📐 非标准电极位置补偿</h3>
+          <p>仅12通道达到接近临床级效果。<br>突破传统BCI对标准电极位置的依赖。</p>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card fade-in delay-1" style="height:100%">
+          <h3>📅 突破时间线</h3>
+          <table class="data-table" style="margin-top:8px">
+            <thead>
+              <tr><th>时间</th><th>突破</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2015-2017</td><td>干式织物EEG传感器</td></tr>
+              <tr><td>2017-2019</td><td>AI脑信号解码算法</td></tr>
+              <tr><td>2019-2021</td><td>大规模真实世界EEG数据集</td></tr>
+              <tr><td>2021-2023</td><td>耳机形态BCI集成</td></tr>
+              <tr><td>2024</td><td>消费级专注力追踪算法</td></tr>
+              <tr><td class="highlight">2025</td><td class="highlight">跨品类BCI平台化</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== Slide 8: 战略转型 ========== -->
+  <div class="slide" data-index="7">
+    <div class="slide-tag">Chapter 07</div>
+    <div class="slide-title">三次战略转型</div>
+
+    <div class="transform-flow fade-in" style="margin-bottom:8px">
+      <div class="transform-box">
+        <div class="phase">转型 1 · 2015→2020</div>
+        <div class="desc">研究型BCI</div>
+        <div class="target">VR意念交互</div>
+      </div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-box">
+        <div class="desc">消费级专注力追踪</div>
+        <div class="target">日常可用</div>
+      </div>
+    </div>
+
+    <div class="transform-flow fade-in delay-1" style="margin-bottom:8px">
+      <div class="transform-box">
+        <div class="phase">转型 2 · 2020→2024</div>
+        <div class="desc">AI软件平台</div>
+        <div class="target">纯技术授权</div>
+      </div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-box">
+        <div class="desc">硬件+软件一体化</div>
+        <div class="target">MW75 Neuro产品</div>
+      </div>
+    </div>
+
+    <div class="transform-flow fade-in delay-2" style="margin-bottom:24px">
+      <div class="transform-box">
+        <div class="phase">转型 3 · 2025→2026</div>
+        <div class="desc">单一产品公司</div>
+        <div class="target">MW75 Neuro系列</div>
+      </div>
+      <div class="transform-arrow">→</div>
+      <div class="transform-box" style="border-color:rgba(0,206,201,0.4)">
+        <div class="desc" style="color:var(--accent)">技术平台公司</div>
+        <div class="target">授权+自研双轨</div>
+      </div>
+    </div>
+
+    <div class="card fade-in delay-3" style="margin-bottom:20px">
+      <h3>🎯 当前策略 (2026)</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:8px">
+        <div><strong style="color:var(--text)">自有产品线：</strong><span style="color:var(--text-dim)">MW75 Neuro / LT 持续迭代</span></div>
+        <div><strong style="color:var(--text)">品牌合作：</strong><span style="color:var(--text-dim)">HyperX(游戏) + M&D(高端音频)</span></div>
+        <div><strong style="color:var(--text)">技术授权：</strong><span style="color:var(--text-dim)">向OEM厂商开放Neurable AI平台</span></div>
+        <div><strong style="color:var(--text)">纵向追踪：</strong><span style="color:var(--text-dim)">长期脑健康数据收集和分析</span></div>
+      </div>
+    </div>
+
+    <div class="moat-tags fade-in delay-4">
+      <div class="moat-tag"><span class="moat-icon">📊</span>最大EEG数据集 — 难以复制</div>
+      <div class="moat-tag"><span class="moat-icon">🧵</span>干织物传感器 — 体验碾压</div>
+      <div class="moat-tag"><span class="moat-icon">🥇</span>先发优势 — 首个消费级BCI</div>
+      <div class="moat-tag"><span class="moat-icon">🤝</span>合作生态 — HP + M&D</div>
+      <div class="moat-tag"><span class="moat-icon">🔄</span>平台效应 — 规模加速</div>
+    </div>
+  </div>
+
+  <!-- ========== Slide 9: 总结 ========== -->
+  <div class="slide" data-index="8">
+    <div class="slide-tag">Summary</div>
+    <div class="slide-title">关键数据总结</div>
+    <div class="card fade-in" style="margin-bottom:20px">
+      <table class="data-table">
+        <thead>
+          <tr><th>指标</th><th>数据</th><th>指标</th><th>数据</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>成立时间</td><td class="highlight">2015年</td>
+            <td>总部</td><td class="highlight">美国波士顿</td>
+          </tr>
+          <tr>
+            <td>创始人</td><td>Dr. Ramses Alcaide</td>
+            <td>累计融资</td><td class="big-num">$6500万</td>
+          </tr>
+          <tr>
+            <td>A轮</td><td class="highlight">$3500万 (2025.12)</td>
+            <td>员工数</td><td>估计 50-100人</td>
+          </tr>
+          <tr>
+            <td>旗舰产品</td><td>MW75 Neuro</td>
+            <td>合作方</td><td>Master & Dynamic · HyperX(HP)</td>
+          </tr>
+          <tr>
+            <td>核心专利</td><td>EEG算法 · 干织物传感器 · 耳机BCI集成</td>
+            <td>目标市场</td><td class="highlight">全品类可穿戴BCI平台</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="card fade-in delay-2" style="margin-bottom:20px">
+      <h3>📌 一句话定位</h3>
+      <p style="font-size:18px;font-weight:600;color:var(--text);text-align:center;padding:8px 0;">
+        Neurable 正在从一家「BCI耳机公司」进化为「脑感知AI平台」，<br>
+        目标是让认知健康追踪像戴耳机一样自然。
+      </p>
+    </div>
+
+    <div class="sources-list fade-in delay-3">
+      <strong>资料来源：</strong>
+      Neurable官网 · BusinessWire · TechCrunch · Crunchbase · ITU AI for Good · Built In Boston
+    </div>
+  </div>
+
+</div>
+
+<!-- ===== Navigation ===== -->
+<div class="nav-bar">
+  <button class="nav-btn" onclick="prevSlide()" title="上一页">◀</button>
+  <div class="nav-dots" id="navDots"></div>
+  <span class="slide-counter" id="slideCounter">1 / 9</span>
+  <button class="nav-btn" onclick="nextSlide()" title="下一页">▶</button>
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  let currentSlide = 0;
+
+  // Build dots
+  const dotsContainer = document.getElementById('navDots');
+  for (let i = 0; i < totalSlides; i++) {
+    const dot = document.createElement('div');
+    dot.className = 'nav-dot' + (i === 0 ? ' active' : '');
+    dot.onclick = () => goToSlide(i);
+    dotsContainer.appendChild(dot);
+  }
+
+  function goToSlide(index) {
+    if (index < 0 || index >= totalSlides || index === currentSlide) return;
+    const direction = index > currentSlide ? 1 : -1;
+
+    slides[currentSlide].classList.remove('active');
+    slides[currentSlide].classList.add(direction > 0 ? 'prev' : '');
+
+    currentSlide = index;
+
+    slides.forEach(s => s.classList.remove('active', 'prev'));
+    slides[currentSlide].classList.add('active');
+
+    // Update dots
+    document.querySelectorAll('.nav-dot').forEach((d, i) => {
+      d.classList.toggle('active', i === currentSlide);
+    });
+
+    // Update counter
+    document.getElementById('slideCounter').textContent = `${currentSlide + 1} / ${totalSlides}`;
+
+    // Update progress
+    document.getElementById('progressBar').style.width = `${((currentSlide + 1) / totalSlides) * 100}%`;
+
+    // Re-trigger animations
+    slides[currentSlide].querySelectorAll('.fade-in, .timeline-item').forEach(el => {
+      el.style.animation = 'none';
+      el.offsetHeight;
+      el.style.animation = '';
+    });
+  }
+
+  function nextSlide() { goToSlide(currentSlide + 1); }
+  function prevSlide() { goToSlide(currentSlide - 1); }
+
+  // Keyboard
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); nextSlide(); }
+    if (e.key === 'ArrowLeft') { e.preventDefault(); prevSlide(); }
+    if (e.key === 'Home') { e.preventDefault(); goToSlide(0); }
+    if (e.key === 'End') { e.preventDefault(); goToSlide(totalSlides - 1); }
+    if (e.key === 'f' || e.key === 'F') {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen();
+      } else {
+        document.exitFullscreen();
+      }
+    }
+  });
+
+  // Touch swipe
+  let touchStartX = 0;
+  document.addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; });
+  document.addEventListener('touchend', (e) => {
+    const diff = e.changedTouches[0].screenX - touchStartX;
+    if (Math.abs(diff) > 60) {
+      diff < 0 ? nextSlide() : prevSlide();
+    }
+  });
+
+  // Init progress
+  document.getElementById('progressBar').style.width = `${(1 / totalSlides) * 100}%`;
+</script>
+
+</body>
+</html>
