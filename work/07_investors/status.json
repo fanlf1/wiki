@@ -1,0 +1,423 @@
+{
+  "_说明": "投资机构信息完善状态跟踪。completeness: X/7 (完成模块数/总模块数)。evidence_tier: S/A/B/C。update_status: 待更新/进行中/已完成。modules: 各模块完成度(true/false)。",
+  "_completeness等级": {
+    "7/7 ★": "完整：所有模块已完成，含深度调研",
+    "5-6/7": "充实：核心模块完成，缺exits或depth",
+    "3-4/7": "初步：基本信息+部分模块",
+    "1-2/7": "骨架：仅基本信息或极少数模块"
+  },
+  "_update_status定义": {
+    "待更新": "需要补充，尚未认领",
+    "进行中": "已被agent认领，正在调研",
+    "已完成": "本次无需更新或已更新完毕"
+  },
+  "_模块定义": {
+    "info": "基本信息（规模、类型、总部、阶段偏好）",
+    "portfolio": "投资组合（按赛道分类，含轮次/金额/时间）",
+    "gp": "关键合伙人（姓名、方向、背景、代表投资）",
+    "thesis": "投资逻辑/论文（公开的投资哲学和观点）",
+    "exits": "退出记录（IPO/收购/关闭）",
+    "signal": "值得关注的信号（最新动态、观点变化）",
+    "depth": "深度调研（完整6模块调研，对应.skill方法论）"
+  },
+  "evidence_tier定义": {
+    "S": "风向标：投资即信号，方向高度预测赛道趋势",
+    "A": "产业验证：投资反映产业链战略判断",
+    "B": "补充信号：有参考价值，辅助验证",
+    "C": "背景参考：了解行业格局，不直接驱动决策"
+  },
+  "updated": "2026-05-28",
+  "investors": {
+    "a16z-Bio-Health": {
+      "name": "a16z Bio+Health",
+      "evidence_tier": "S",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 100,
+      "last_researched": "2026-05-28"
+    },
+    "Khosla-Ventures": {
+      "name": "Khosla Ventures",
+      "evidence_tier": "S",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 44,
+      "last_researched": "2026-05-28"
+    },
+    "HongShan": {
+      "name": "红杉中国",
+      "evidence_tier": "S",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 5,
+      "last_researched": "2026-05-28"
+    },
+    "Huawei-Hubble": {
+      "name": "华为哈勃",
+      "evidence_tier": "A",
+      "completeness": "7/7 ★",
+      "update_status": "进行中",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 15,
+      "last_researched": "2026-05-28"
+    },
+    "Xiaomi-Shunwei": {
+      "name": "小米/顺为",
+      "evidence_tier": "A",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 8,
+      "last_researched": "2026-05-28"
+    },
+    "Lenovo-Capital": {
+      "name": "联想创投",
+      "evidence_tier": "A",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 5,
+      "last_researched": "2026-05-28"
+    },
+    "Hillhouse高瓴": {
+      "name": "高瓴",
+      "evidence_tier": "A",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 0,
+      "last_researched": "2026-05-28"
+    },
+    "Shenzhen-Capital深创投": {
+      "name": "深创投",
+      "evidence_tier": "A",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 0,
+      "last_researched": "2026-05-28"
+    },
+    "GV-Google-Ventures": {
+      "name": "GV",
+      "evidence_tier": "B",
+      "completeness": "7/7 ★",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": true
+      },
+      "portfolio_count": 3,
+      "last_researched": "2026-05-28"
+    },
+    "Qiming-VC": {
+      "name": "启明创投",
+      "evidence_tier": "B",
+      "completeness": "6/7",
+      "update_status": "进行中",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 13,
+      "last_researched": "2026-05-28"
+    },
+    "OPPO": {
+      "name": "OPPO",
+      "evidence_tier": "B",
+      "completeness": "6/7",
+      "update_status": "进行中",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 5,
+      "last_researched": "2026-05-28"
+    },
+    "VIVO": {
+      "name": "vivo",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "进行中",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 2,
+      "last_researched": "2026-05-28"
+    },
+    "Scout-Ventures": {
+      "name": "Scout Ventures",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "进行中",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 41,
+      "last_researched": "2026-05-28"
+    },
+    "Tencent腾讯": {
+      "name": "腾讯",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 12,
+      "last_researched": "2026-05-28"
+    },
+    "Microsoft": {
+      "name": "微软",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 5,
+      "last_researched": "2026-05-28"
+    },
+    "Nvidia": {
+      "name": "英伟达",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 6,
+      "last_researched": "2026-05-28"
+    },
+    "Parkway-Venture-Capital": {
+      "name": "Parkway Venture Capital",
+      "evidence_tier": "B",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 12,
+      "last_researched": "2026-05-28"
+    },
+    "CICC中金": {
+      "name": "中金",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 6,
+      "last_researched": "2026-05-28"
+    },
+    "CMB-Capital招商局资本": {
+      "name": "招商局资本",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 3,
+      "last_researched": "2026-05-28"
+    },
+    "China-Mobile中国移动": {
+      "name": "中国移动",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 3,
+      "last_researched": "2026-05-28"
+    },
+    "SDIC国投": {
+      "name": "国投创合",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 8,
+      "last_researched": "2026-05-28"
+    },
+    "Sinicopharm华润": {
+      "name": "华润资本",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 4,
+      "last_researched": "2026-05-28"
+    },
+    "Meituan美团": {
+      "name": "美团龙珠",
+      "evidence_tier": "C",
+      "completeness": "6/7",
+      "update_status": "已完成",
+      "modules": {
+        "info": true,
+        "portfolio": true,
+        "gp": true,
+        "thesis": true,
+        "exits": true,
+        "signal": true,
+        "depth": false
+      },
+      "portfolio_count": 12,
+      "last_researched": "2026-05-28"
+    }
+  }
+}
