@@ -115,5 +115,5 @@ tags: [品牌, BCI, 脑机接口, EEG, 耳机, 美国]
 
 - [[脑韵科技]] — 中国消费级BCI耳机竞品
 - [[Emotiv]] — 老牌EEG厂商
-- [[wiki/entities/Neurable]] — wiki实体页
-- [[wiki/concepts/脑机接口]] — BCI技术概览
+- [[Neurable]] — wiki实体页
+- [[脑机接口]] — BCI技术概览

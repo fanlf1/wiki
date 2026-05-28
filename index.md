@@ -1,63 +1,126 @@
-# LLM Wiki 索引
+# Index
 
-> 本索引由LLM维护，每次摄取新源时自动更新。
-
-最后更新：2026-05-19（依据新版 CLAUDE.md 结构重构）
-
-## 📚 统计
-
-- 主题 (Topics)：20
-- 源文件 (Sources)：35
-- 专家 (Experts)：1
-- 活跃项目 (Active Projects)：1
-
-> **项目管理中心**：`work/06_projects/` 目录用于管理各类项目
-> - 📁 [`projects/active/`](work/06_projects/active/) — 正在进行的项目
-> - 📦 [`projects/archived/`](work/06_projects/archived/) — 已归档的项目
+> work/ 内容索引，按业务目录编号组织。最后更新：2026-05-27
 
 ---
 
-## 主题 (Topics)
- - [[需求分析-激光灭蚊]] — 从用户痛点、商业价值到技术合规的四层需求拆解及研发优先级推导
- - [[商务沟通模板-晶相光电]] — 联系晶相光电申请规格书与样品的专业邮件草稿及发送建议
- - [[无创血糖监测技术流派-VNIR高光谱分析]] — 400-1000nm波段物理基础、高光谱型vs标准型对比及全局流派评估
- - [[无创血糖产品-FDA认证计划]] — 监管路径(De Novo)、分阶段计划安排、声称策略及关键建议
- - [[STM32N6-系列采购与成本参考]] — 芯片单价阶梯、套片BOM核算、采购策略及成本优化因素
- - [[STM32CubeIDE-学习与使用指南]] — 官方文档导航、开发工作流、AI进阶路径及性能优化技巧
- - [[STM32N675-AI性能深度解析]] — 600 GOPS AI算力水平横向对比及高光谱应用价值
- - [[无创血糖监测认证标准与验收测试]] — NMPA/FDA/CE三大认证体系标准整合，50+验收测试项目，ISO 15197/Clarke误差网格，临床试验要求，已获批产品参考
- - [[可穿戴设备SoC平台对比-恒玄vs高通]] — 可穿戴设备芯片平台技术对比（恒玄BES2500 vs 高通骁龙Wear，应用场景、血糖监测适配）
- - [[睿芯微核心专利技术深度分析]] — 27项专有知识产权全景分析（高光谱CIS、GMR、AI算法）
- - [[MIPI-CSI接口对血糖监测SoC选型的影响]] — MIPI CSI硬性约束分析（恒玄BES2500排除、ESP32-P4 vs高通、技术决策树）
- - [[BES2800BP-CSI接口技术分析与验证方案]] — BES2800BP的CSI接口深入分析（datasheet解读、小米Watch 5案例、验证方案、决策树）
- - [[BES2800接口使用分析-ISP连接架构调查]] — BES2800与ISP连接架构调查（量产AI眼镜案例、ISP输出接口、可行性分析）
- - [[高通Snapdragon W5+平台技术分析]] — 高通W5+平台完整技术规格（2x 4-lane CSI、双16MP ISP、睿芯微CIS兼容性⭐⭐⭐⭐⭐）
- - [[平台架构对比-恒玄BES2500P-vs-高通Wear-4100+]] — SoC平台架构深度对比（CPU/存储/传感器接口/AI处理/功耗/成本，架构决策树）
- - [[MaruoYamada方法论深入分析-虚数光谱法]] — Maruo & Yamada 2015方法论深度剖ics（数学模型推导、算法复杂度对比、12,000倍性能提升、实现路线图）
- - [[虚数光谱法在多感科技方案中的应用分析]] — 虚数光谱法在多感科技112通道系统中的应用（关键波长选择、特征组合策略、14,000倍速度提升、4阶段实施路线）
- - [[Atlas-PPG小板芯片尺寸汇总]] — Atlas PPG小板关键器件封装尺寸（GH3020 AFE 0.46mm、LTR-C4825P PD 0.5mm、IRRG1816S LED 0.6mm）
+## 00 收集箱 — 19 files
 
----
+- [[work/00_inbox/Clippings/|Clippings]] — 文章剪藏（CGM报告、FDA标准、光谱分析等）
+- [[work/00_inbox/videos/|Videos]] — 视频素材及转录
 
-## 源文件 (Sources)
-- [[2026年Q1线上血糖仪品类季度报告-摘要]] — 线上8.6亿规模，CGM价格战下探至百元，鱼跃/三诺/硅基竞争格局及AI联动趋势
-- [[光谱吸收分析]] — 400-1000nm波段下水、脂肪、蛋白、葡萄糖的吸收特性及AI分析可行性
-- [[Gemini-Code-Assist-安装指南-摘要]] — GCA企业版安装指南整合版（英文+中国版，WSL/Windows/工作站，代理配置，License申请）
-- [[JX-F28P-CIS规格书-摘要]] — SOI晶相光电JX-F28P CIS规格（1/4" 2.0MP, 2.1µm, MIPI/DVP, 睿芯微Demo2配套）
- - [[血糖与PPG方案分析汇总-摩托罗拉]] — 摩托罗拉技术评估（睿芯微/Tiilab/多感科技对比，PPG系统设计，算法供应商评估）
-- [[全球CGM市场2025-摘要]] — 全球CGM市场概况（美国$37亿，Abbott+Dexcom占93%，睿芯微市场定位）
-- [[无创血糖监测难点与技术对策-摘要]] — 无创血糖八大难点及睿芯微技术对策（高光谱CIS+AI系统性应对）
-- [[CGM方案总结-摘要]] — 无创血糖监测技术方案对比评估（睿芯微⭐⭐⭐⭐⭐、多感科技⭐⭐、Tiilab⭐）
-- [[CGM评价标准-摘要]] — CGM方案评估的核心评价标准（MARD、ISO 15197 ZoneAB等）
-- [[高光谱成像技术详解-摘要]] — 高光谱成像原理、数据立方体、在血糖检测中的应用
-- [[STM32N675规格书摘要]] — STM32N657官方规格书（Cortex-M55@800MHz、Neural-ART 600GOPS、4.2MB SRAM、H.264编码）
-- [[Maruo & Yamada 2015 - NIR无创血糖-虚数光谱-摘要]] — 虚数光谱法无创血糖预测（不依赖多元分析，皮肤散射变化处理）
+## 01 工作日志 — 7 files
 
----
+- [[work/01_journal/2026-05-06|2026-05-06]] — 最近工作日志
 
-> **说明**：本索引是wiki的导航地图。主题页由LLM基于原始素材结构化生成。品牌、供应商、概念原理由策展人手动维护于 `work/` 目录下。
+## 02 需求研究 — 57 files
 
-## 专家库 (Experts)
+| 场景 | 报告 |
+|------|------|
+| 抗衰老·代谢优化 | [[work/02_demand/anti-age/metabolic-optimization/reports/2026-05-26-代谢抗衰老需求与产品机会研究\|代谢抗衰老需求报告]] |
+| 血糖·日常监测 | [[work/02_demand/blood-sugar/daily-monitoring/reports/2026-05-26-糖尿病日常血糖监测需求与无创戒指机会研究\|糖尿病日常血糖监测报告]] |
+| 血糖·健身追踪 | [[work/02_demand/blood-sugar/fitness-tracking/reports/2026-05-26-健身餐后血糖追踪需求与可行性研究\|健身餐后血糖追踪报告]] |
+| 脑力·专注管理 | [[work/02_demand/brain/focus-management/reports/2026-05-26-脑力专注管理需求与产品定位研究\|专注管理需求报告]] |
+| 脑力·冥想平静 | [[work/02_demand/brain/meditation-calm/reports/2026-05-26-冥想平静监测需求与可行性研究\|冥想平静监测报告]] |
+| 智能家居 | [[work/02_demand/SmartHome/激光灭蚊/Demand_Analysis\|激光灭蚊需求分析]] |
 
-- 📁 [`experts/garry-tan/`](experts/garry-tan/) — Garry Tan：YC总裁，gbrain+gstack AI Agent系统
-  - [[Garry Tan - gbrain+gstack]] — AI Agent大脑系统（知识图谱、混合搜索、26项技能）
+## 03 创新想法 — 0 files
+
+> 暂无内容。
+
+## 04 调研课题 — 55 files
+
+- [[work/04_research/overview\|调研课题总览]]
+
+| 课题 | 入口 |
+|------|------|
+| BCI 脑机接口 | [[work/04_research/BCI/README\|README]] |
+| CGM 持续血糖监测 | [[work/04_research/CGM/README\|README]] |
+| HRV · 平静度 | [[work/04_research/HRV-平静度/README\|README]] |
+| HRV · 认知疲劳 | [[work/04_research/HRV-认知疲劳/README\|README]] |
+| 多标志物 · 光谱检测 | [[work/04_research/多标志物-光谱检测/README\|README]] |
+| 高光谱 · 无创血糖 | [[work/04_research/高光谱-无创血糖/README\|README]] |
+| 能量梯度引力机制 | [[work/04_research/physics/TGFT_引力机制研究\|TGFT研究笔记]] |
+| 戒指功耗 | [[work/04_research/戒指功耗/智能戒指硬件架构-摘要\|硬件架构摘要]] |
+| 毫米波雷达 · 穿戴健康 | [[work/04_research/毫米波雷达-穿戴健康/README\|README]] |
+| 健康算法对比 | [[work/04_research/健康算法/健康算法供应商对比-WBD-NOHAYO-B-Secur-Focus\|供应商对比]] |
+| 微能源收集 · 真空量子电池 | [[work/04_research/微能源收集/真空量子电池/topic\|topic]] |
+
+## 05 供应商 — 75 files
+
+- [[work/05_vendors/overview\|供应商总览]]
+
+### 行业研究
+
+- [[work/05_vendors/1_Industry/2026智能穿戴生态融合创新峰会-摘要\|智能穿戴峰会]] — [[work/05_vendors/1_Industry/CES-2027信息收集-摘要\|CES 2027]] — [[work/05_vendors/1_Industry/健康监测厂商调研-20260509\|健康监测厂商]] — [[work/05_vendors/1_Industry/戒指形态产品可行性分析\|戒指形态分析]] — [[work/05_vendors/1_Industry/无屏手表到来-供应链新玩法-摘要\|无屏手表]] — [[work/05_vendors/1_Industry/智库/潮电智库\|潮电智库]]
+
+### 供应商列表
+
+- [[work/05_vendors/Espressif乐鑫/Espressif乐鑫\|Espressif乐鑫]] — Wi-Fi/蓝牙MCU
+- [[work/05_vendors/恒玄科技/恒玄科技\|恒玄科技]] — BES2800系列AIoT芯片
+- [[work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解\|BES2800BP详情]] — CSI2与AI算力对比STM32N6和高通Wear
+- [[work/05_vendors/高通/高通\|高通]] — Snapdragon Wear可穿戴平台
+- [[work/05_vendors/ST/files/STM32N675-AI性能深度解析\|ST]] — STM32N675 AI性能解析
+- [[work/05_vendors/Spectricity/Spectricity\|Spectricity]] — 多光谱成像技术
+- [[work/05_vendors/睿芯微/睿芯微\|睿芯微]] — 无创血糖CIS方案
+- [[work/05_vendors/多感科技/多感科技\|多感科技]] — 近红外多光谱方案
+- [[work/05_vendors/MCU/files/低功耗MCU选型对比报告-摘要\|MCU选型对比]] — 低功耗MCU选型
+- [[work/05_vendors/Neurable/Neurable\|Neurable]] — 脑机接口公司调研
+- [[work/05_vendors/tiilab/files/Tiilab无创血糖监测-摘要\|tiilab]] — 无创血糖可穿戴方案
+- [[work/05_vendors/成都睿谱微/成都睿谱微\|成都睿谱微]] — 光谱芯片
+- [[work/05_vendors/晶相光电/files/JX-F28P-CIS规格书-摘要\|晶相光电]] — CIS图像传感器
+- [[work/05_vendors/瑞声科技/瑞声科技\|瑞声科技]] — 精密元器件与光学
+- [[work/05_vendors/炬光科技/炬光科技\|炬光科技]] — 激光光学元器件
+- [[work/05_vendors/艾为电子/艾为电子\|艾为电子]] — 模拟IC设计
+- [[work/05_vendors/芯海科技/芯海科技\|芯海科技]] — 信号链MCU
+- [[work/05_vendors/迈塔兰斯/迈塔兰斯\|迈塔兰斯]] — 超透镜技术
+- [[work/05_vendors/钛方科技/钛方科技\|钛方科技]] — 压力触控方案
+- [[work/05_vendors/麦斯卓微/麦斯卓微\|麦斯卓微]] — MEMS传感器
+- [[work/05_vendors/智冉医疗/智冉医疗\|智冉医疗]] — 医疗设备
+- [[work/05_vendors/极豪科技/极豪科技\|极豪科技]] — 指纹识别方案
+- [[work/05_vendors/JBD显耀显示/JBD显耀显示\|JBD显耀显示]] — MicroLED微显示（近50款AR眼镜采用）
+- [[work/05_vendors/歌尔光学/歌尔光学\|歌尔光学]] — AR光波导量产+整机方案（舜宇19亿入股）
+- [[work/05_vendors/舜宇光学/舜宇光学\|舜宇光学]] — 晶圆级微纳光学（舜宇奥来已并入歌尔光学）
+- [[work/05_vendors/鲲游光电/鲲游光电\|鲲游光电]] — AR光波导（SRG+VHG+SiC），出货40万+片
+- [[work/05_vendors/至格科技/至格科技\|至格科技]] — SRG衍射光波导（清华系，渐变光栅）
+- [[work/05_vendors/镭昱/镭昱\|镭昱]] — 单片全彩MicroLED（量子点光刻QDPR）
+- [[work/05_vendors/Dispelix/Dispelix\|Dispelix]] — SRG刻蚀光波导（芬兰，瑞声收购）
+- [[work/05_vendors/欧姆龙/欧姆龙\|欧姆龙]] — 健康医疗设备
+
+## 06 品牌竞品 — 60 files
+
+- [[work/06_brands/overview\|品牌竞品总览]]
+
+| 品类 | 品牌矩阵 |
+|------|----------|
+| BCI | [[work/06_brands/BCI/brand_matrix\|矩阵]]（Neuralink、Neurable、Emotiv、OpenBCI、脑韵科技） |
+| CGM | [[work/06_brands/CGM/brand_matrix\|矩阵]] · [[work/06_brands/CGM/CGM市场\|市场概览]]（Abbott、Dexcom、Medtronic等） |
+| Earbuds | [[work/06_brands/Earbuds/brand_matrix\|矩阵]]（Apple、Samsung、Sony、Jabra、Huawei等） |
+| Ring | [[work/06_brands/Ring/brand_matrix\|矩阵]]（Oura、Samsung、Ultrahuman、RingConn等） |
+| Robot | [[work/06_brands/Robot/brand_matrix\|矩阵]]（Tesla、Figure AI、波士顿动力、宇树科技、智元机器人） |
+| Watch | [[work/06_brands/Watch/brand_matrix\|矩阵]]（Apple、Huawei、Garmin、Samsung等） |
+
+## 07 投资机构 — 19 files
+
+- [[work/07_investors/README\|投资机构总览]]
+
+- [[work/07_investors/a16z-Bio-Health/a16z-Bio-Health\|a16z Bio+Health]]（深度调研，$30亿+累计募资，100+被投公司） — [[work/07_investors/GV-Google-Ventures/GV-Google-Ventures\|GV]] — [[work/07_investors/Hillhouse高瓴/Hillhouse高瓴\|Hillhouse高瓴]] — [[work/07_investors/HongShan/HongShan\|HongShan红杉]] — [[work/07_investors/Huawei-Hubble/Huawei-Hubble\|Huawei Hubble]] — [[work/07_investors/Khosla-Ventures/Khosla-Ventures\|Khosla Ventures]] — [[work/07_investors/Lenovo-Capital/Lenovo-Capital\|Lenovo Capital]] — [[work/07_investors/Meituan美团/Meituan美团\|Meituan美团]] — [[work/07_investors/Microsoft/Microsoft\|Microsoft]] — [[work/07_investors/Nvidia/Nvidia\|Nvidia]] — [[work/07_investors/OPPO/OPPO\|OPPO]] — [[work/07_investors/Parkway-Venture-Capital/Parkway-Venture-Capital\|Parkway VC]] — [[work/07_investors/Qiming-VC/Qiming-VC\|Qiming VC]] — [[work/07_investors/Tencent腾讯/Tencent腾讯\|Tencent腾讯]] — [[work/07_investors/VIVO/VIVO\|VIVO]] — [[work/07_investors/Xiaomi-Shunwei/Xiaomi-Shunwei\|Xiaomi·Shunwei]] — [[work/07_investors/Scout-Ventures/Scout-Ventures\|Scout Ventures]]
+
+## 21 技能工具 — 18 files
+
+- [[work/21_skills/GCA/|GCA]] — Gemini Code Assist 安装与配置
+- [[work/21_skills/GCP/|GCP]] — Google Cloud Platform 数据管理
+- [[work/21_skills/LLM/|LLM]] — LLM 相关资源
+- [[work/21_skills/agents/|Agents]] — AI Agent 开发
+- [[work/21_skills/obsidian/|Obsidian]] — Obsidian 配置与使用
+
+## 40 项目管理 — 17 files
+
+- [[work/40_projects/overview\|项目总览]]
+
+| 项目 | 说明 |
+|------|------|
+| [[work/40_projects/gluecose/2026-04-29-睿芯微CIS方案技术验证/README\|睿芯微CIS验证]] | 睿芯微CIS方案技术验证项目 |
+| [[work/40_projects/gluecose/1_Product_Design/solution_evaluation/SoC选型/无创血糖SoC选型\|无创血糖SoC选型]] | CSI-2接口对比：STM32N675 vs 高通Wear vs BES2800BP |
+| [[work/40_projects/gluecose/甲方验收方案-摩托罗拉-摘要\|甲方验收方案]] | 摩托罗拉验收方案 |
+| [[work/40_projects/gluecose/验收检查清单-操作手册-摘要\|验收操作手册]] | 验收检查清单与操作手册 |

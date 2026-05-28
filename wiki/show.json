@@ -37,6 +37,7 @@
         { "title": "多标志物·光谱检测", "path": "work/04_research/多标志物-光谱检测/README.md", "description": "多标志物单传感器与光谱检测" },
         { "title": "高光谱·无创血糖", "path": "work/04_research/高光谱-无创血糖/README.md", "description": "高光谱成像无创血糖监测技术" },
         { "title": "戒指功耗", "path": "work/04_research/戒指功耗/智能戒指硬件架构-摘要.md", "description": "智能戒指硬件架构与功耗分析" },
+        { "title": "毫米波雷达·穿戴健康", "path": "work/04_research/毫米波雷达-穿戴健康/README.md", "description": "60GHz雷达在穿戴设备中的健康监测应用" },
         { "title": "健康算法对比", "path": "work/04_research/健康算法/健康算法供应商对比-WBD-NOHAYO-B-Secur-Focus.md", "description": "健康算法供应商对比" }
       ]
     },
@@ -58,11 +59,11 @@
         { "title": "BES2800BP·CSI2与AI详解", "path": "work/05_vendors/恒玄科技/files/BES2800BP-CSI2接口与AI算力详解.md", "description": "CSI2接口与AI算力对比STM32N6和高通Wear" },
         { "title": "高通", "path": "work/05_vendors/高通/高通.md", "description": "Snapdragon Wear可穿戴平台" },
         { "title": "ST", "path": "work/05_vendors/ST/files/STM32N675-AI性能深度解析.md", "description": "STM32N675 AI性能解析" },
-        { "title": "Spectricity", "path": "work/05_vendors/Spectricity/files/1_公司/背景/Spectricity-公司主页.md", "description": "多光谱成像技术" },
-        { "title": "睿芯微", "path": "work/05_vendors/睿芯微/files/2_产品/手册/无创血糖检测项目介绍.md", "description": "无创血糖CIS方案" },
-        { "title": "多感科技", "path": "work/05_vendors/多感科技/files/多感科技近红外多光谱介绍-摘要.md", "description": "近红外多光谱方案" },
+        { "title": "Spectricity", "path": "work/05_vendors/Spectricity/Spectricity.md", "description": "多光谱成像技术" },
+        { "title": "睿芯微", "path": "work/05_vendors/睿芯微/睿芯微.md", "description": "无创血糖CIS方案" },
+        { "title": "多感科技", "path": "work/05_vendors/多感科技/多感科技.md", "description": "近红外多光谱方案" },
         { "title": "MCU选型对比", "path": "work/05_vendors/MCU/files/低功耗MCU选型对比报告-摘要.md", "description": "低功耗MCU选型对比" },
-        { "title": "Neurable", "path": "work/05_vendors/Neurable/files/Neurable脑机接口公司深度调研-摘要.md", "description": "脑机接口公司调研" },
+        { "title": "Neurable", "path": "work/05_vendors/Neurable/Neurable.md", "description": "脑机接口公司调研" },
         { "title": "tiilab", "path": "work/05_vendors/tiilab/files/Tiilab无创血糖监测-摘要.md", "description": "无创血糖可穿戴方案" },
         { "title": "成都睿谱微", "path": "work/05_vendors/成都睿谱微/成都睿谱微.md", "description": "光谱芯片供应商" },
         { "title": "晶相光电", "path": "work/05_vendors/晶相光电/files/JX-F28P-CIS规格书-摘要.md", "description": "CIS图像传感器" },
@@ -75,6 +76,13 @@
         { "title": "麦斯卓微", "path": "work/05_vendors/麦斯卓微/麦斯卓微.md", "description": "MEMS传感器" },
         { "title": "智冉医疗", "path": "work/05_vendors/智冉医疗/智冉医疗.md", "description": "医疗设备" },
         { "title": "极豪科技", "path": "work/05_vendors/极豪科技/极豪科技.md", "description": "指纹识别方案" },
+        { "title": "JBD显耀显示", "path": "work/05_vendors/JBD显耀显示/JBD显耀显示.md", "description": "MicroLED微显示（近50款AR眼镜采用）" },
+        { "title": "歌尔光学", "path": "work/05_vendors/歌尔光学/歌尔光学.md", "description": "AR光波导量产+整机方案（舜宇19亿入股）" },
+        { "title": "舜宇光学", "path": "work/05_vendors/舜宇光学/舜宇光学.md", "description": "晶圆级微纳光学（舜宇奥来已并入歌尔光学）" },
+        { "title": "鲲游光电", "path": "work/05_vendors/鲲游光电/鲲游光电.md", "description": "AR光波导（SRG+VHG+SiC），出货40万+片" },
+        { "title": "至格科技", "path": "work/05_vendors/至格科技/至格科技.md", "description": "SRG衍射光波导（清华系，渐变光栅）" },
+        { "title": "镭昱", "path": "work/05_vendors/镭昱/镭昱.md", "description": "单片全彩MicroLED（量子点光刻QDPR）" },
+        { "title": "Dispelix", "path": "work/05_vendors/Dispelix/Dispelix.md", "description": "SRG刻蚀光波导（芬兰，瑞声收购）" },
         { "title": "欧姆龙", "path": "work/05_vendors/欧姆龙/欧姆龙.md", "description": "健康医疗设备" }
       ]
     },
@@ -88,7 +96,10 @@
         { "title": "CGM市场概览", "path": "work/06_brands/CGM/CGM市场.md", "description": "CGM市场全景分析" },
         { "title": "CGM品牌矩阵", "path": "work/06_brands/CGM/brand_matrix.md", "description": "CGM品牌竞争格局" },
         { "title": "Ring品牌矩阵", "path": "work/06_brands/Ring/brand_matrix.md", "description": "智能戒指品牌竞争格局" },
-        { "title": "Watch品牌矩阵", "path": "work/06_brands/Watch/brand_matrix.md", "description": "智能手表品牌竞争格局" }
+        { "title": "Watch品牌矩阵", "path": "work/06_brands/Watch/brand_matrix.md", "description": "智能手表品牌竞争格局" },
+        { "title": "Earbuds品牌矩阵", "path": "work/06_brands/Earbuds/brand_matrix.md", "description": "TWS耳机品牌竞争格局" },
+        { "title": "Glasses品牌矩阵", "path": "work/06_brands/Glasses/brand_matrix.md", "description": "AI智能眼镜品牌竞争格局" },
+        { "title": "Robot品牌矩阵", "path": "work/06_brands/Robot/brand_matrix.md", "description": "具身智能与人形机器人竞争格局" }
       ]
     },
     {
@@ -100,12 +111,18 @@
         { "title": "投资机构总览", "path": "work/07_investors/README.md", "description": "已跟踪投资机构清单" },
         { "title": "a16z Bio+Health", "path": "work/07_investors/a16z-Bio-Health/a16z-Bio-Health.md", "description": "Andreessen Horowitz生物健康基金" },
         { "title": "GV", "path": "work/07_investors/GV-Google-Ventures/GV-Google-Ventures.md", "description": "Google Ventures" },
+        { "title": "Hillhouse高瓴", "path": "work/07_investors/Hillhouse高瓴/Hillhouse高瓴.md", "description": "亚洲最大PE之一，重仓医疗健康" },
         { "title": "HongShan红杉", "path": "work/07_investors/HongShan/HongShan.md", "description": "红杉中国" },
         { "title": "Huawei Hubble", "path": "work/07_investors/Huawei-Hubble/Huawei-Hubble.md", "description": "华为哈勃投资" },
         { "title": "Khosla Ventures", "path": "work/07_investors/Khosla-Ventures/Khosla-Ventures.md", "description": "Khosla风投" },
         { "title": "Lenovo Capital", "path": "work/07_investors/Lenovo-Capital/Lenovo-Capital.md", "description": "联想创投" },
+        { "title": "Meituan美团", "path": "work/07_investors/Meituan美团/Meituan美团.md", "description": "本地生活+机器人战略投资" },
+        { "title": "Microsoft", "path": "work/07_investors/Microsoft/Microsoft.md", "description": "微软战略投资（AI、机器人）" },
+        { "title": "Nvidia", "path": "work/07_investors/Nvidia/Nvidia.md", "description": "英伟达战略投资（AI、机器人）" },
         { "title": "OPPO", "path": "work/07_investors/OPPO/OPPO.md", "description": "OPPO投资" },
+        { "title": "Parkway VC", "path": "work/07_investors/Parkway-Venture-Capital/Parkway-Venture-Capital.md", "description": "深科技/机器人早期风投" },
         { "title": "Qiming VC", "path": "work/07_investors/Qiming-VC/Qiming-VC.md", "description": "启明创投" },
+        { "title": "Tencent腾讯", "path": "work/07_investors/Tencent腾讯/Tencent腾讯.md", "description": "腾讯CVC（AI、机器人）" },
         { "title": "VIVO", "path": "work/07_investors/VIVO/VIVO.md", "description": "VIVO投资" },
         { "title": "Xiaomi·Shunwei", "path": "work/07_investors/Xiaomi-Shunwei/Xiaomi-Shunwei.md", "description": "小米·顺为" }
       ]
@@ -116,7 +133,7 @@
       "description": "项目进度、任务与交付物",
       "source": "work/40_projects",
       "keyFiles": [
-        { "title": "项目总览", "path": "work/40_projects/README.md", "description": "项目索引与状态" },
+        { "title": "项目总览", "path": "work/40_projects/overview.md", "description": "项目索引与状态" },
         { "title": "睿芯微CIS验证", "path": "work/40_projects/gluecose/2026-04-29-睿芯微CIS方案技术验证/README.md", "description": "睿芯微CIS方案技术验证项目" },
         { "title": "无创血糖SoC选型", "path": "work/40_projects/gluecose/1_Product_Design/solution_evaluation/SoC选型/无创血糖SoC选型.md", "description": "CSI-2接口决定论：STM32N675 vs 高通Wear vs BES2800BP" },
         { "title": "甲方验收方案", "path": "work/40_projects/gluecose/甲方验收方案-摩托罗拉-摘要.md", "description": "摩托罗拉验收方案" },

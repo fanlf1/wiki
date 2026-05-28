@@ -105,5 +105,5 @@ tags: [品牌, BCI, 脑机接口, 侵入式, 植入, 美国]
 
 - [[Neurable]] — 非侵入式消费级BCI
 - [[脑韵科技]] — 中国非侵入式BCI
-- [[wiki/entities/Neuralink]] — wiki实体页
-- [[wiki/concepts/脑机接口]] — BCI技术概览
+- [[Neuralink]] — wiki实体页
+- [[脑机接口]] — BCI技术概览

@@ -1,107 +1,208 @@
-# 投资机构追踪
+---
+type: overview
+created: 2026-05-27
+updated: 2026-05-28
+tags: [投资机构, 总览, 赛道信号]
+---
 
-> 跟踪业界投资机构在我们相关赛道（无创血糖、智能戒指、BCI、健康穿戴）的投资布局。
-> 关注的不是"谁有钱"，而是"聪明钱在往哪流"——帮我们判断技术方向和市场时机。
-> 更新日期：2026-05-27
+# 投资机构追踪（07_investors）
 
-## 赛道定义
+> 核心目标：**通过投资机构的动向来发现和验证值得关注的技术赛道。**
+> 投资机构是赛道价值的证据源——按其证据力（实力、前瞻性、阶段、金额）来权衡信号的分量。
+> 更新日期：2026-05-28
 
-| 赛道ID | 名称 | 包含 |
-|--------|------|------|
-| cgm | 连续血糖监测 | 微创CGM、无创血糖、OTC CGM |
-| ring | 智能戒指 | 健康戒指、血糖戒指 |
-| bci | 脑机接口 | EEG耳机、脑电头环、专注力追踪 |
-| wearable | 健康穿戴 | 智能手表、手环、健康平台 |
-| bio-sensor | 生物传感 | 光谱传感、微针、汗液传感、触觉传感 |
-| digital-health | 数字健康 | 远程医疗、AI诊断、慢病管理 |
-| longevity | 长寿/抗衰 | 代谢优化、衰老标志物 |
+---
 
-## 投资矩阵
+## 一、投资者证据力评级
 
-> 图例：✅ 有投资/布局 | ⬚ 合作/自研（非投资） | — 无公开动作
+> 评级标准：管理规模、赛道专注度、投资前瞻性、历史命中率。等级越高，其投资动向作为赛道信号的权重越大。
 
-| 机构 | cgm | ring | bci | wearable | bio-sensor | digital-health | longevity |
-|------|-----|------|-----|----------|------------|----------------|-----------|
-| [[Lenovo-Capital/Lenovo-Capital\|联想创投]] | — | — | ✅智冉医疗 | ✅悦动圈 | ✅钛方科技 | ⬚ | — |
-| [[Huawei-Hubble/Huawei-Hubble\|华为哈勃]] | — | — | — | ⬚玄玑系统 | ✅芯海/炬光 | ⬚ | — |
-| [[Xiaomi-Shunwei/Xiaomi-Shunwei\|小米/顺为]] | — | ✅华米Amazfit | — | ✅华米/乐骑 | ✅迈塔兰斯 | ⬚ | — |
-| [[OPPO/OPPO\|OPPO]] | — | — | — | ⬚手表+实验室 | ⬚健康智眼 | ⬚欧姆龙合作 | — |
-| [[VIVO/VIVO\|vivo]] | — | — | — | ⬚手表+边缘AI | — | ⬚ | — |
-| [[a16z-Bio-Health/a16z-Bio-Health\|a16z Bio+Health]] | ✅Levels | — | — | ✅Cardiogram | — | ✅Abridge | — |
-| [[GV-Google-Ventures/GV-Google-Ventures\|GV]] | ✅Signos | — | — | — | — | — | — |
-| [[Khosla-Ventures/Khosla-Ventures\|Khosla Ventures]] | — | — | — | ✅AliveCor/Thync | ✅SiPhox | — | — |
-| [[HongShan/HongShan\|红杉中国]] | — | — | ✅$6.5亿E轮 | ✅质子科技/Fiture | — | ⬚ | — |
-| [[Qiming-VC/Qiming-VC\|启明创投]] | — | — | — | — | — | ✅图湃医疗 | — |
+| 等级 | 含义 | 判断标准 | 代表机构 |
+|------|------|----------|----------|
+| **S 风向标** | 投资即信号，方向高度预测赛道趋势 | 顶级专注度 + 大额基金 + 前瞻性布局 | a16z Bio+Health、Khosla Ventures、HongShan红杉 |
+| **A 产业验证** | 投资反映产业链战略判断 | 头部CVC/VC + 产业链深度绑定 | 华为哈勃、小米/顺为、高瓴、深创投、联想创投 |
+| **B 补充信号** | 有参考价值，辅助验证 | 有相关赛道投资但专注度或规模不及S/A | GV、启明、Parkway、OPPO、腾讯、Microsoft、Nvidia |
+| **C 背景参考** | 了解行业格局，不直接驱动决策 | 大型机构但与我们的赛道交集较浅 | 中金、招商局、中国移动、国投、华润、美团、vivo、Scout |
 
-**观察**：
-- 国内5家CVC在cgm和ring赛道几乎没有直接投资——**无创血糖戒指仍是空白赛道**
-- 海外VC在cgm赛道最活跃：a16z投Levels、GV投Signos——"CGM+AI饮食建议"模式已被验证
-- Khosla投SiPhox（硅光居家检测）说明"光学/光谱技术用于健康检测"被深科技VC认可
-- 红杉中国领投$6.5亿BCI融资，BCI赛道获得顶级VC重注
-- bio-sensor是最受关注的底层方向（联想投钛方、小米投迈塔兰斯、Khosla投SiPhox）
+### S级详解
 
-## 机构总表
+| 机构 | 基金规模 | 赛道专注 | 前瞻性标志 |
+|------|----------|----------|------------|
+| [[a16z-Bio-Health/a16z-Bio-Health\|a16z Bio+Health]] | Bio Fund III $750M + Lilly联合$500M | AI+医疗、代谢健康、数字健康 | 投Levels（CGM+AI代谢）时该模式尚未验证，现已成主流 |
+| [[Khosla-Ventures/Khosla-Ventures\|Khosla Ventures]] | 未公开（Vinod Khosla个人声誉为背书） | 深科技/MedTech | 投SiPhox（硅光居家检测），"光学技术用于健康检测"已被验证 |
+| [[HongShan/HongShan\|HongShan红杉中国]] | ~¥75亿 | AI+生命科学、BCI | $6.5亿领投BCI，国内该赛道最大单笔投资 |
 
-| 机构 | 类型 | 总部 | 重点赛道 | 代表案例 | 优先级 |
-|------|------|------|----------|----------|--------|
-| [[Lenovo-Capital/Lenovo-Capital\|联想创投]] | CVC | 北京 | IoT/AI/传感器 | 钛方科技、智冉医疗 | 中 |
-| [[Huawei-Hubble/Huawei-Hubble\|华为哈勃]] | CVC | 深圳 | 半导体/芯片 | 芯海科技、炬光科技 | 高 |
-| [[Xiaomi-Shunwei/Xiaomi-Shunwei\|小米/顺为]] | CVC+VC | 北京 | 智能硬件/IoT | 华米、迈塔兰斯、乐骑 | 高 |
-| [[a16z-Bio-Health/a16z-Bio-Health\|a16z Bio+Health]] | VC | 硅谷 | AI+医疗/代谢健康 | Levels Health | 高 |
-| [[Khosla-Ventures/Khosla-Ventures\|Khosla Ventures]] | VC | 硅谷 | 深科技/MedTech | SiPhox、AliveCor | 高 |
-| [[HongShan/HongShan\|红杉中国]] | VC | 北京 | AI+生命科学 | BCI $6.5亿、质子科技 | 高 |
-| [[OPPO/OPPO\|OPPO]] | CVC | 东莞 | 先进制造/健康 | 运动健康实验室、欧姆龙合作 | 中 |
-| [[VIVO/VIVO\|vivo]] | 企业 | 东莞 | AI/大模型 | AI研究院、边缘AI可穿戴 | 低 |
+### A级详解
 
-## 按赛道索引
+| 机构 | 基金规模 | 产业链关系 | 战略价值 |
+|------|----------|------------|----------|
+| [[Huawei-Hubble/Huawei-Hubble\|华为哈勃]] | 未公开 | 芯海/炬光等供应链绑定 | 投谁=华为认为哪个技术节点关键 |
+| [[Xiaomi-Shunwei/Xiaomi-Shunwei\|小米/顺为]] | 顺为$2.5B+ | 华米/迈塔兰斯生态绑定 | 智能硬件风向标，投谁=小米生态可能用谁 |
+| [[Hillhouse高瓴/Hillhouse高瓴\|高瓴]] | ~$60B+ | 医疗健康重注 | 中国最大PE之一，医疗方向判断力强 |
+| [[Shenzhen-Capital深创投/Shenzhen-Capital深创投\|深创投]] | ~¥4500亿 | 硬科技标杆，500+企业IPO | 国资硬科技第一品牌，投谁=政策导向+技术判断 |
+| [[Lenovo-Capital/Lenovo-Capital\|联想创投]] | 超¥216亿 | IoT/AI/传感器 | 投钛方/智冉，传感器+BCI方向验证 |
 
-### cgm（连续血糖监测）
-- [[a16z-Bio-Health/a16z-Bio-Health|a16z Bio+Health]] → Levels Health（CGM+AI代谢健康App，$60M+）
-- [[GV-Google-Ventures/GV-Google-Ventures|GV]] → Signos（AI+CGM减重平台，$33M+）
+---
 
-### ring（智能戒指）
-- [[Xiaomi-Shunwei/Xiaomi-Shunwei|小米/顺为]] → 华米科技（Amazfit Helio Ring）
+## 二、赛道信号总览
 
-### bci（脑机接口）
-- [[Lenovo-Capital/Lenovo-Capital|联想创投]] → 智冉医疗（侵入式柔性BCI，3亿A轮）
-- [[HongShan/HongShan|红杉中国]] → $6.5亿E轮领投脑机接口公司
+> 核心问题：**哪个赛道值得关注？投资机构的资金在告诉我们什么？**
+> 信号强度 = 投资者证据力 × 投资金额 × 投资阶段（越早期越有前瞻性）
 
-### wearable（健康穿戴）
-- [[a16z-Bio-Health/a16z-Bio-Health|a16z]] → Cardiogram（可穿戴心脏健康AI）
-- [[Khosla-Ventures/Khosla-Ventures|Khosla]] → AliveCor（可穿戴ECG）、Thync（神经刺激）
-- [[HongShan/HongShan|红杉中国]] → 质子科技（可穿戴健康监测）、Fiture（智能健身）
-- [[Xiaomi-Shunwei/Xiaomi-Shunwei|小米/顺为]] → 华米科技、乐骑智能
-- [[Lenovo-Capital/Lenovo-Capital|联想创投]] → 悦动圈
-- [[Huawei-Hubble/Huawei-Hubble|华为]] → 自研玄玑系统+手表
-- [[OPPO/OPPO|OPPO]] → 自研手表+运动健康实验室（过亿元）
-- [[VIVO/VIVO|vivo]] → 自研手表+边缘AI
+| 赛道 | 信号强度 | S级动作 | A级动作 | 关键判断 |
+|------|----------|---------|---------|----------|
+| **bio-sensor 生物传感** | 🔴 强 | Khosla→SiPhox $27M | 联想→钛方 ¥1亿+，小米→迈塔兰斯，华为→芯海/炬光 | **共识最高的底层方向**。四大阵营都在投传感技术，光学/弹性波/芯片信号链各有侧重 |
+| **cgm 连续血糖监测** | 🔴 强 | a16z→Levels $60M，GV→Signos $33M | — | **海外已验证**。"CGM+AI饮食建议"模式被顶级VC押注，国内尚无对应 |
+| **bci 脑机接口** | 🟡 中强 | HongShan→$6.5亿 | 联想→智冉医疗 ¥3亿 | **重注赛道**。红杉单笔$6.5亿显示极度看好，但偏后期重注而非早期探索 |
+| **wearable 健康穿戴** | 🟡 中 | a16z→Cardiogram | 小米→华米/乐骑，华为→玄玑自研 | **已成熟赛道**。VC投向AI算法层，CVC偏向生态绑定 |
+| **ring 智能戒指** | ⚪ 弱 | — | 小米→华米(Amazfit Ring) | **仅小米一条信号**。顶级VC尚未下注戒指形态，说明市场仍在早期 |
+| **digital-health 数字健康** | 🟡 中 | a16z→Abridge $300M | 启明→图湃 ¥5亿 | AI+医疗方向活跃，但与我们直接相关度较低 |
+| **longevity 长寿/抗衰** | ⚪ 弱 | — | — | **零信号**。23家机构均无动作，抗衰赛道尚未引起投资界关注 |
+
+### 信号强度判定规则
+
+| 级别 | 条件 |
+|------|------|
+| 🔴 强 | 有S级投资 + 至少2个A级交叉验证 |
+| 🟡 中强 | 有S级大额投资（单笔>$50M）但交叉验证不足 |
+| 🟡 中 | 仅有A级投资，无S级信号 |
+| ⚪ 弱 | 仅有B/C级信号，或单一信号 |
+
+---
+
+## 三、投资事件明细
+
+> 按赛道组织，标注投资者证据力、金额、阶段——用于快速判断被投公司的价值。
 
 ### bio-sensor（生物传感）
-- [[Khosla-Ventures/Khosla-Ventures|Khosla]] → SiPhox Health（硅光子居家检测，$27M）
-- [[Lenovo-Capital/Lenovo-Capital|联想创投]] → 钛方科技（弹性波传感器，多次加注）
-- [[Xiaomi-Shunwei/Xiaomi-Shunwei|小米/顺为]] → 迈塔兰斯（超构光学）
-- [[Huawei-Hubble/Huawei-Hubble|华为哈勃]] → 芯海科技、炬光科技（供应链绑定）
+
+| 被投公司 | 投资者 | 证据力 | 金额 | 阶段 | 技术方向 | 页面 |
+|----------|--------|--------|------|------|----------|------|
+| SiPhox Health | Khosla | S | $27M | — | 硅光子居家检测 | — |
+| 钛方科技 | 联想创投 | A | 超¥1亿（多次加注） | — | 弹性波传感器 | [[../../05_vendors/钛方科技/钛方科技]] |
+| 迈塔兰斯 | 小米/顺为 | A | — | — | 超构光学 | [[../../05_vendors/迈塔兰斯/迈塔兰斯]] |
+| 芯海科技 | 华为哈勃 | A | — | — | 模拟信号链MCU | [[../../05_vendors/芯海科技/芯海科技]] |
+| 炬光科技 | 华为哈勃 | A | — | — | 光电器件 | [[../../05_vendors/炬光科技/炬光科技]] |
+
+### cgm（连续血糖监测）
+
+| 被投公司 | 投资者 | 证据力 | 金额 | 阶段 | 技术方向 | 页面 |
+|----------|--------|--------|------|------|----------|------|
+| Levels Health | a16z | S | $60M+ | — | CGM+AI代谢健康 | — |
+| Signos | GV | B | $33M | — | AI+CGM减重平台 | — |
+
+### bci（脑机接口）
+
+| 被投公司 | 投资者 | 证据力 | 金额 | 阶段 | 技术方向 | 页面 |
+|----------|--------|--------|------|------|----------|------|
+| —（未公开） | HongShan | S | $6.5亿 | E轮 | 脑机接口 | — |
+| 智冉医疗 | 联想创投 | A | ¥3亿 | A轮 | 侵入式柔性BCI | [[../../06_brands/BCI/智冉医疗/智冉医疗]] |
+
+### wearable（健康穿戴）
+
+| 被投公司 | 投资者 | 证据力 | 金额 | 阶段 | 技术方向 | 页面 |
+|----------|--------|--------|------|------|----------|------|
+| Cardiogram | a16z | S | — | — | 可穿戴心脏健康AI | — |
+| 华米科技 | 小米/顺为 | A | — | — | Amazfit智能穿戴 | [[../../06_brands/Ring/Amazfit/Amazfit]] |
+| 质子科技 | HongShan | S | — | — | 可穿戴健康监测 | — |
+| 悦动圈 | 联想创投 | A | — | — | 运动健康平台 | — |
+| AliveCor | Khosla | S | — | — | 可穿戴ECG | — |
+
+### ring（智能戒指）
+
+| 被投公司 | 投资者 | 证据力 | 金额 | 阶段 | 技术方向 | 页面 |
+|----------|--------|--------|------|------|----------|------|
+| 华米科技(Amazfit Ring) | 小米/顺为 | A | — | — | 健康戒指 | [[../../06_brands/Ring/Amazfit/Amazfit]] |
 
 ### digital-health（数字健康）
-- [[a16z-Bio-Health/a16z-Bio-Health|a16z]] → Abridge（AI临床文档，$300M Series E）
-- [[Qiming-VC/Qiming-VC|启明创投]] → 图湃医疗（眼科器械，5亿E轮）
-- [[OPPO/OPPO|OPPO]] → 与欧姆龙战略合作（IoT设备直联+数据打通）
-- [[Huawei-Hubble/Huawei-Hubble|华为]] → 慢病管理、房颤分析
 
-### longevity（长寿/抗衰）
-- **10家均无动作**——抗衰/长寿赛道尚未引起国内外主要投资者关注
+| 被投公司 | 投资者 | 证据力 | 金额 | 阶段 | 技术方向 | 页面 |
+|----------|--------|--------|------|------|----------|------|
+| Abridge | a16z | S | $300M | E轮 | AI临床文档 | — |
+| 图湃医疗 | 启明 | B | ¥5亿 | E轮 | 眼科器械 | — |
+
+---
+
+## 四、投资者档案索引
+
+> 完整的投资者列表，按证据力排序。
+
+### S级 风向标
+
+| 机构 | 类型 | 总部 | 基金规模 | 重点赛道 | 代表案例 |
+|------|------|------|----------|----------|----------|
+| [[a16z-Bio-Health/a16z-Bio-Health\|a16z Bio+Health]] | VC | 硅谷 | Bio III $750M | AI+医疗、代谢、数字健康 | Levels $60M, Abridge $300M |
+| [[Khosla-Ventures/Khosla-Ventures\|Khosla Ventures]] | VC | 硅谷 | — | 深科技/MedTech | SiPhox $27M, AliveCor |
+| [[HongShan/HongShan\|HongShan红杉中国]] | VC | 北京 | ~¥75亿 | AI+生命科学 | BCI $6.5亿, 质子科技 |
+
+### A级 产业验证
+
+| 机构 | 类型 | 总部 | 基金规模 | 重点赛道 | 代表案例 |
+|------|------|------|----------|----------|----------|
+| [[Huawei-Hubble/Huawei-Hubble\|华为哈勃]] | CVC | 深圳 | — | 半导体/芯片 | 芯海科技、炬光科技 |
+| [[Xiaomi-Shunwei/Xiaomi-Shunwei\|小米/顺为]] | CVC+VC | 北京 | 顺为$2.5B+ | 智能硬件/IoT | 华米、迈塔兰斯 |
+| [[Hillhouse高瓴/Hillhouse高瓴\|高瓴]] | VC/PE | 北京/香港 | ~$60B+ | 医疗健康、消费、科技 | — |
+| [[Shenzhen-Capital深创投/Shenzhen-Capital深创投\|深创投]] | 国资VC | 深圳 | ~¥4500亿 | 硬科技、医疗、AI | 500+企业IPO |
+| [[Lenovo-Capital/Lenovo-Capital\|联想创投]] | CVC | 北京 | 超¥216亿 | IoT/AI/传感器 | 钛方科技、智冉医疗 |
+
+### B级 补充信号
+
+| 机构 | 类型 | 总部 | 重点赛道 | 代表案例 |
+|------|------|------|----------|----------|
+| [[GV-Google-Ventures/GV-Google-Ventures\|GV]] | VC | 旧金山 | — | Signos $33M |
+| [[Qiming-VC/Qiming-VC\|启明创投]] | VC | 上海 | 医疗/TMT | 图湃医疗 ¥5亿 |
+| [[Parkway-Venture-Capital/Parkway-Venture-Capital\|Parkway]] | VC | 纽约 | 深科技/机器人 | Figure AI（早期） |
+| [[OPPO/OPPO\|OPPO]] | CVC | 东莞 | 智能硬件/健康 | 欧姆龙合作 |
+| [[Tencent腾讯/Tencent腾讯\|腾讯]] | CVC | 深圳 | AI/机器人/医疗 | — |
+| [[Microsoft/Microsoft\|微软]] | CVC | Redmond | AI/云计算/机器人 | — |
+| [[Nvidia/Nvidia\|英伟达]] | CVC | Santa Clara | AI生态/机器人 | — |
+
+### C级 背景参考
+
+| 机构 | 类型 | 总部 | 重点赛道 |
+|------|------|------|----------|
+| [[CICC中金/CICC中金\|中金]] | 券商直投 | 北京 | 硬科技IPO |
+| [[CMB-Capital招商局资本/CMB-Capital招商局资本\|招商局资本]] | CVC（央企） | 深圳/香港 | 交通/大健康/新能源 |
+| [[China-Mobile中国移动/China-Mobile中国移动\|中国移动]] | CVC（央企） | 北京 | 芯片/AI/物联网 |
+| [[SDIC国投/SDIC国投\|国投创合]] | 引导基金 | 北京 | 新兴产业/先进制造 |
+| [[Sinicopharm华润/Sinicopharm华润\|华润资本]] | CVC（央企） | 深圳/香港 | 大健康/大消费 |
+| [[Meituan美团/Meituan美团\|美团]] | CVC | 北京 | 机器人/AI/本地生活 |
+| [[VIVO/VIVO\|vivo]] | CVC | 东莞 | AI/影像 |
+| [[Scout-Ventures/Scout-Ventures\|Scout Ventures]] | VC | 奥斯汀 | 深科技/量子 | Casimir $12M |
+
+---
+
+## 五、核心洞察
+
+### 赛道优先级判断
+
+| 赛道 | 信号 | 我们应该 |
+|------|------|----------|
+| **bio-sensor** | 四大阵营共识 | 持续跟踪传感技术供应商，这是底层能力 |
+| **cgm** | 海外S级验证，国内空白 | "CGM+AI"模式可参考，无创血糖仍是空白机会 |
+| **ring** | 仅一条A级信号 | 顶级VC未下注=市场早期，也意味着先发优势窗口 |
+| **longevity** | 零信号 | 暂不投入精力 |
+
+### 待补充
+
+- 各机构的具体投资金额和阶段信息不够完整
+- 缺少2026年最新投资动态
+- C级机构中有部分可能与我们的赛道有新交集（需更新）
+
+---
 
 ## 新增指南
 
 ### 新增投资机构
-1. 在 `07_investors/` 下创建 `<机构英文名>/` 目录，含 files/
-2. 创建 `<机构英文名>.md`，按 [[_template|模板]] 填写
-3. 更新本文件的"投资矩阵"、"机构总表"、"按赛道索引"
+1. 在 `07_investors/` 下创建 `<机构英文名>/` 目录
+2. 创建 `<机构英文名>.md`，按模板填写
+3. 判断证据力等级，更新本文件对应板块
 
 ### 新增投资事件
 1. 在对应机构的 .md 文件中添加投资事件
-2. 更新本文件的"投资矩阵"
-3. 如果涉及新公司，考虑在 `06_brands/` 中创建对应品牌文件
+2. 更新本文件「三、投资事件明细」
+3. 评估信号强度是否变化，更新「二、赛道信号总览」
+4. 如果涉及新公司，考虑在 `06_brands/` 或 `05_vendors/` 中创建文件
 
 ## 关联目录
 

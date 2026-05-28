@@ -111,4 +111,4 @@ tags: [品牌, CGM, 植入式, 长期监测]
 - [[Abbott雅培]] — CGM市场份额第一
 - [[Dexcom德康]] — CGM精度第一
 - [[work/5_vendors/Eversense/]] — 供应商目录（如已有）
-- [[wiki/concepts/无创血糖监测]] — 无创技术路线对比
+- [[无创血糖监测]] — 无创技术路线对比

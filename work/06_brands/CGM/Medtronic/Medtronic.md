@@ -117,4 +117,4 @@ tags: [品牌, CGM, 糖尿病护理, 胰岛素泵, 微创]
 
 - [[Abbott雅培]] — CGM市场份额第一
 - [[Dexcom德康]] — CGM精度第一
-- [[wiki/concepts/CGM市场]] — CGM市场概览
+- [[CGM市场]] — CGM市场概览

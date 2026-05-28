@@ -69,4 +69,4 @@ tags: [品牌, BCI, 脑机接口, EEG, 开源, 开发者]
 
 - [[Neurable]] — 消费级BCI耳机
 - [[Emotiv]] — 商业EEG设备
-- [[wiki/concepts/脑机接口]] — BCI技术概览
+- [[脑机接口]] — BCI技术概览

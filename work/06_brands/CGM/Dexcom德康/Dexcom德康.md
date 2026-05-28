@@ -130,5 +130,5 @@ tags: [品牌, CGM, 糖尿病护理, 微创]
 
 - [[Abbott雅培]] — 最大竞品
 - [[Medtronic]] — 泵集成方案竞品
-- [[wiki/concepts/MARD]] — 精度评价标准
-- [[wiki/concepts/无创血糖监测]] — 无创技术路线
+- [[MARD]] — 精度评价标准
+- [[无创血糖监测]] — 无创技术路线

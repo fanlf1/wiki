@@ -2,6 +2,86 @@
 
 ---
 
+## [2026-05-28] ingest | a16z Bio + Health 基金深度调研
+
+- 操作：对Andreessen Horowitz Bio + Health基金进行全面深度调研
+- 更新页面：
+  - `work/07_investors/a16z-Bio-Health/a16z-Bio-Health.md` — 从初版存根扩展为完整调研报告
+- 核心发现：
+  - **基金规模**：Bio Fund I($200M, 2015) → II($450M, 2017) → III($851M, 2020) → IV($1.5B, 2022)，累计约$30亿 + Lilly联合基金$500M(2025)
+  - **GP团队**：Vijay Pande(创始GP, 2025.6离任), Jorge Conde, Julie Yoo, Vineeta Agarwala(现任3位GP) + Jay Rughani, Daisy Wolf等
+  - **投资组合**：100+被投公司，覆盖AI+医疗(Hippocratic AI, Komodo Health)、数字健康(Devoted Health, Accolade)、代谢健康(Levels Health)、药物发现(insitro, BioAge Labs)、基因组学(Ultima Genomics)等
+  - **退出**：17个退出，含IPO(Accolade, BioAge Labs, Erasca)、SPAC(EQRx)、收购(Ciitizen→Invitae)
+  - **投资逻辑**："Moore's Law vs Eroom's Law"——将医疗服务转化为计算
+  - **2025-2026动态**：Pande离任、Bio Fund V目标缩减50%至$750M、重心从传统biotech转向AI应用
+- 更新索引：`index.md`
+- 备注：覆盖6个搜索维度的综合调研
+
+---
+
+## [2026-05-27] ingest | 毫米波雷达穿戴健康监测调研
+
+- 操作：网络调研mmWave雷达在可穿戴设备和健康监测中的应用
+- 新建页面：
+  - `work/04_research/毫米波雷达-穿戴健康/README.md` — 完整调研报告
+- 核心发现：
+  - **芯片方案**：Infineon BGT60TR13C功耗<1mW（穿戴最优），Acconeer A121/XM125 60GHz PCR 5.2x5.5mm
+  - **健康精度**：心率检测中位误差<14ms（vs ECG金标准），呼吸率检测已商用
+  - **商用产品**：Google Nest Hub (Soli雷达睡眠监测) 是唯一大规模商用穿戴/近穿戴产品
+  - **戒指集成不可行**：5x5mm芯片+60GHz天线在戒指形态内集成困难
+  - **中国产业**：34+企业入局康养毫米波雷达（移远、莫之比等），均为固定式/床头形态
+- 更新索引：
+  - `work/04_research/overview.md` — 添加毫米波雷达课题
+  - `index.md` — 添加到04调研课题索引
+  - `wiki/show.json` — 添加到research分类
+- 关联课题：[[work/04_research/3D感知/README|3D感知]]（手势识别交叉）
+
+---
+
+## [2026-05-27] ingest | AR光学供应链供应商档案建设
+
+- 操作：创建AR眼镜光学赛道6家核心供应商档案
+- 新建页面（6个）：
+  - `work/05_vendors/歌尔光学/歌尔光学.md` — AR光波导量产龙头，5款Star系列波导产品，舜宇19亿入股
+  - `work/05_vendors/舜宇光学/舜宇光学.md` — 港股千亿光学巨头，舜宇奥来WLO并入歌尔光学
+  - `work/05_vendors/鲲游光电/鲲游光电.md` — AR光波导（SRG+VHG+SiC），6大产品系列，累计出货40万+片
+  - `work/05_vendors/至格科技/至格科技.md` — 清华系SRG衍射光波导，渐变光栅专利，小米/OPPO战略投资
+  - `work/05_vendors/镭昱/镭昱.md` — 单片全彩MicroLED，量子点光刻（QDPR）路线，JBD竞品
+  - `work/05_vendors/Dispelix/Dispelix.md` — 芬兰SRG刻蚀光波导，2025年被瑞声科技收购
+- 更新索引：`index.md`、`wiki/show.json`、`wiki/wiki-index.md`
+- 同步补充：`wiki-index.md` 中 JBD显耀显示 条目此前缺失，一并补充
+
+---
+
+## [2026-05-27] ingest | Robot 品牌竞品档案建设
+
+- 操作：创建 Robot 品类完整品牌档案
+- 新建页面（5个）：
+  - `work/06_brands/Robot/Tesla/Tesla.md` — Optimus人形机器人，2026H2量产，目标$20-30K
+  - `work/06_brands/Robot/Figure AI/Figure AI.md` — Helix VLA驱动，BMW部署3万+辆车，估值$39B
+  - `work/06_brands/Robot/波士顿动力/波士顿动力.md` — Atlas 56DoF，Spot近2000台部署，Hyundai旗下
+  - `work/06_brands/Robot/宇树科技/宇树科技.md` — 2025全球出货第一(5500+台)，冲刺科创板IPO
+  - `work/06_brands/Robot/智元机器人/智元机器人.md` — GO-1 ViLLA开源生态，出货5168台全球第二
+- 更新索引：
+  - `work/06_brands/Robot/brand_matrix.md` — 全面更新规格对比表、出货量数据、技术趋势
+  - `work/06_brands/overview.md` — 添加波士顿动力到品牌索引，更新Robot描述，添加完整性评估
+  - `index.md` — 添加Robot品类到06品牌竞品
+  - `wiki/show.json` — 添加Robot品牌矩阵到brands分类
+- 备注：所有品牌信息基于2025-2026年最新公开数据
+
+---
+
+## [2026-05-27] ingest | JBD显耀显示供应商档案建设
+
+- 操作：从Even Realities G1眼镜逆向追溯核心投影与镜片供应商
+- 新建页面：
+  - `work/05_vendors/JBD显耀显示/JBD显耀显示.md` — MicroLED微显示头部企业，近50款AR眼镜采用
+- 关键发现：
+  - **微显示器**：JBD（显耀显示）单绿MicroLED 0.13" VGA，640×480，1200nits
+  - **光波导**：Even G1未公开具体供应商，行业主流为歌尔光学（舜宇19亿入股）、鲲游光电（VHG+SRG）、Dispelix（瑞声合作）
+  - 2025年光波导AR眼镜出货量占比从几乎为零升至约70%
+- 更新索引：`index.md`、`wiki/show.json`
+
 ## [2026-05-20] source | 睿芯微 Demo 笔记更新
 
 - 操作：根据初心更新的 demos 笔记，更新 Demo2 摘要页

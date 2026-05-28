@@ -105,5 +105,5 @@ tags: [品牌, 手表, 智能穿戴, 健康监测, Galaxy Watch, 血压, 三星]
 - [[Apple]] — 最大竞品
 - [[Huawei]] — 中国市场竞品
 - [[Motorola]] — 同赛道品牌
-- [[wiki/entities/高通]] — Snapdragon W5平台供应商
+- [[高通]] — Snapdragon W5平台供应商
 - [[wiki/topics/可穿戴设备SoC平台对比-恒玄vs高通]] — SoC平台对比

@@ -104,5 +104,5 @@ tags: [品牌, 手表, 智能穿戴, 健康监测, Amazfit, 华米科技, 长续
 
 - [[Huawei]] — 中国市场竞品
 - [[Garmin]] — 运动+续航对标品牌
-- [[wiki/entities/华米科技]] — 华米科技实体页
+- [[Amazfit]] — 华米科技实体页
 - [[../Ring/Amazfit/Amazfit]] — Ring赛道Amazfit页面

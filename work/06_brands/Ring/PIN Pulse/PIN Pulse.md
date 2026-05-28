@@ -91,5 +91,5 @@ tags: [品牌, 戒指, 无创血糖, 血压监测, Kickstarter, PPG]
 
 - [[Oura]] — Ring赛道领导者
 - [[Ultrahuman]] — 无订阅竞品
-- [[wiki/entities/PIN Pulse]] — wiki实体页（详细技术分析）
+- [[PIN Pulse]] — wiki实体页（详细技术分析）
 - [[睿芯微]] — 高光谱方案供应商（与我们）

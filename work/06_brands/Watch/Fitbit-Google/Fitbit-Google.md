@@ -103,4 +103,4 @@ tags: [品牌, 手表, 智能穿戴, 健康监测, Fitbit, Google, Pixel Watch]
 - [[Apple]] — 最大竞品
 - [[Samsung]] — Android手表竞品
 - [[Garmin]] — 运动健康竞品
-- [[wiki/concepts/无屏手表]] — 无屏手表概念
+- [[无屏手表]] — 无屏手表概念

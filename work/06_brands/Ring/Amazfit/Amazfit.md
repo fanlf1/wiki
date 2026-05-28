@@ -77,5 +77,5 @@ tags: [品牌, 戒指, 健康监测, 中国, 华米]
 
 - [[Oura]] — 市场领导者
 - [[Samsung]] — 科技巨头竞品
-- [[wiki/entities/华米科技]] — wiki实体页
+- [[Amazfit]] — wiki实体页
 - [[wiki/topics/智能戒指电池容量调研报告]] — 电池详细对比
